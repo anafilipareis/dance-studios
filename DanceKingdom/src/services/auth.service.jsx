@@ -4,6 +4,7 @@ const api = axios.create({
   baseURL: process.env.REACT_APP_DEPLOYMENT_URL,
 });
 
+// CHECK THIS LATER!
 export const login = async (email, password) => {
   try {
     const response = await api.post('/auth/login', { email, password });
