@@ -41,13 +41,17 @@
   color: #888;
 }
 
+
+
 /* Adjust the width of the carousel to fill the screen */
 .carousel {
-  width: 100%; /* Use viewport width to fill the entire width of the screen */
+  width: 100vw; /* Use viewport width to fill the entire width of the screen */
 }
 
 .carousel-container {
-  overflow: hidden;
+  
+  margin: 0;
+  padding: 0;
 }
 
 .carousel-track {
@@ -56,7 +60,7 @@
 }
 
 .carousel-image {
-  width: 100%;
-  flex: 0 0 auto; /* Prevent images from stretching */
+  width: 100%; /* Make sure images fill the entire width */
+  
 }
 
