@@ -43,24 +43,25 @@
 
 
 
-/* Adjust the width of the carousel to fill the screen */
-.carousel {
-  width: 100vw; /* Use viewport width to fill the entire width of the screen */
-}
-
 .carousel-container {
-  
-  margin: 0;
-  padding: 0;
+  width: 100vw;
+  overflow: hidden; /* Hide overflow to prevent horizontal scrolling */
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 1.0s ease; /* Adjust the timing for a faster transition */
+  transition: transform 1s ease; /* Adjust the timing for a smoother transition */
 }
 
 .carousel-image {
-  width: 100%; /* Make sure images fill the entire width */
-  
+  width: 100%;
+  opacity: 0; /* Initially hide all images */
+  position: absolute; /* Position images absolutely for individual control */
+  transition: opacity 1s ease; /* Apply the same transition to each image */
 }
+
+.carousel-image.active {
+  opacity: 1; /* Show the active image */
+}
+
 
