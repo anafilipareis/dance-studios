@@ -11,7 +11,7 @@ function NavBar() {
       <Link to ="/">
         <button>Home</button>
       </Link>
-      <Link to ="/dancestyles">
+      <Link to ="/dance-styles">
         <button>Dance Styles</button>
       </Link>
 
@@ -21,7 +21,7 @@ function NavBar() {
           <Link to ="/profile">
           <button>Profile</button>
           </Link>
-          <Link to="/danceclasses">
+          <Link to="/dance-classes">
           <button>Dance Classes</button>
           </Link>
           <button onClick={logOutUser}>Logout</button>
