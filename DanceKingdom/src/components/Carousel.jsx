@@ -12,17 +12,17 @@ function MainCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % numImages);
-    }, 3000); // Adjust the interval for a faster transition
+    }, 3000);
     return () => clearInterval(interval);
   }, [numImages]);
 
   return (
     <div className="carousel-container">
-      <div className="carousel-track" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+      <div className="carousel-track">
         {images.map((image, index) => (
           <img
             key={index}
-            className="carousel-image"
+            className={`carousel-image ${index === activeIndex ? 'active' : ''}`}
             src={image}
             alt={`Slide ${index + 1}`}
           />
@@ -31,6 +31,7 @@ function MainCarousel() {
     </div>
   );
 }
+
 
 export default MainCarousel;
 
