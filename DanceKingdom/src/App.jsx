@@ -17,9 +17,9 @@ function App() {
 
       <Routes>      
         <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/dancestyles" element={<DanceStylesPage />} />
+        <Route exact path="/dance-styles" element={<DanceStylesPage />} />
         <Route exact path="/profile/:userId" element={<IsPrivate><ProfilePage /></IsPrivate>} />
-        <Route exact path="/danceclasses/edit/:classId" element={<IsPrivate><EditClassPage /></IsPrivate>} />   
+        <Route exact path="/dance-classes/edit/:classId" element={<IsPrivate><EditClassPage /></IsPrivate>} />   
         <Route exact path="/signup" element={<IsAnon><SignupPage /></IsAnon>} /> 
         <Route exact path="/login" element={<IsAnon><LoginPage /></IsAnon>}/>       
       </Routes>
