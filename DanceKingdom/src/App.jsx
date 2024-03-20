@@ -4,11 +4,11 @@ import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import DanceStylesPage from "./pages/DanceStylesPage";
 import ProfilePage from "./pages/ProfilePage";
-import EditClassPage from "./pages/EditClassPage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import IsPrivate from "./components/isPrivate";
 import IsAnon from "./components/isAnon";
+import EditClassPage from "./pages/EditClassPage";
 
 function App() {
   return (

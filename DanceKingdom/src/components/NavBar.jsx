@@ -1,44 +1,48 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";                    
 import { AuthContext } from "../context/auth.context"; 
+import logo from "../assets/logo.png"; // Import your logo image
 
-
-function NavBar() {
+function Navbar() {
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext); 
 
   return (
-    <nav>
-      <Link to ="/">
-        <button>Home</button>
-      </Link>
-      <Link to ="/dance-styles">
-        <button>Dance Styles</button>
-      </Link>
-
-      {isLoggedIn && (
-        <>
-          <span>Good to see you {user.name}</span>
-          <Link to ="/profile">
-          <button>Profile</button>
-          </Link>
-          <Link to="/dance-classes">
-          <button>Dance Classes</button>
-          </Link>
-          <button onClick={logOutUser}>Logout</button>
-        </>
-      )}
-
-      {!isLoggedIn && (
-              <>
-                <Link to="/signup"> <button>Sign Up</button> </Link>
-                <Link to="/login"> <button>Login</button> </Link>
-              </>
-            )}
-
-      
-      
-    </nav>
-  )
+    <header className="navbar">
+      <div className="logo-container">
+        <img src={logo} alt="Logo" className="logo" />
+      </div>
+      <nav className="nav-buttons">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          {isLoggedIn && (
+            <>
+              <li>
+                <span>Welcome {user.name}</span>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <button onClick={logOutUser}>Logout</button>
+              </li>
+            </>
+          )}
+          {!isLoggedIn && (
+            <>
+              <li>
+                <Link to="/signup">Sign Up</Link>
+              </li>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+            </>
+          )}
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
-export default NavBar;
+export default Navbar;

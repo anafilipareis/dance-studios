@@ -6,7 +6,7 @@ import AddDanceClass from "../components/AddDanceClass";
 // import projectsService from "../services/projects.service";
 
 
-function DanceClassesPage()
+
 
 
 
