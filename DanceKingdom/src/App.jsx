@@ -8,6 +8,7 @@ import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import IsPrivate from "./components/isPrivate";
 import IsAnon from "./components/isAnon";
+import EditClassPage from "./pages/EditClassPage";
 
 function App() {
   return (
