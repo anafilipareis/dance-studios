@@ -2,8 +2,9 @@ import { useState, useContext } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth.context";
- 
-const API_URL = "http://localhost:5005";
+import { login } from "../services/auth.service";
+
+const API_URL=import.meta.env.VITE_DEPLOYMENT_URL;
  
  
 function LoginPage(props) {
@@ -21,14 +22,15 @@ function LoginPage(props) {
   
   const handleLoginSubmit = (e) => {
     e.preventDefault();
-    const requestBody = { email, password };
+  //  const requestBody={email, password};
  
-    axios.post(`${API_URL}/auth/login`, requestBody)
+    // axios.post(`${API_URL}/auth/login`, requestBody)
+   login(email, password)
       .then((response) => {
       // Request to the server's endpoint `/auth/login` returns a response
       // with the JWT string ->  response.data.authToken
-        console.log('JWT token', response.data.authToken );
-        storeToken(response.data.authToken) // this will store the token in localStorage   
+        console.log('JWT token', response.authToken );
+        storeToken(response.authToken) // this will store the token in localStorage   
       })
       .then(()=> {
         authenticateUser() // update the auth state variables accordingly

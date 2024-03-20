@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.VITE_DEPLOYMENT_URL,
+  baseURL: import.meta.env.VITE_DEPLOYMENT_URL, 
 });
 
-// CHECK THIS LATER!
+
 export const login = async (email, password) => {
   try {
     const response = await api.post('/auth/login', { email, password });
