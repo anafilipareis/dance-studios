@@ -22,7 +22,7 @@ function Navbar() {
                 <span>Welcome {user.name}</span>
               </li>
               <li>
-                <Link to="/dance-classes">Dance Styles</Link>
+                <Link to="/dance-classes">Dance Classes</Link>
               </li>
               <li>
                 <Link to="/profile">Profile</Link>

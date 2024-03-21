@@ -1,23 +1,14 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import React from 'react';
+import DanceClasses from '../components/DanceClassesList'; // Import your DanceClasses component
 
-import DanceCard from "../components/DanceClassCard";
-import AddDanceClass from "../components/AddDanceClass";
-// import projectsService from "../services/projects.service";
+const DanceClassesPage = () => {
+  return (
+    <div className="container">
+      
+      <DanceClasses /> {/* Render the DanceClasses component */}
+    </div>
+  );
+};
 
+export default DanceClassesPage;
 
-
-
-
-
-
-// function DanceClassesPage() {
-
-//     return (
-//         <div>
-//             <h1> Here you can find our classes. Please click on them for more details</h1>
-//         </div>
-//     );
-// }
-
-// export default DanceClassesPage;
