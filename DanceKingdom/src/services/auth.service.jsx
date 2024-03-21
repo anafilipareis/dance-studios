@@ -23,6 +23,15 @@ export const register = async (userData) => {
   }
 };
 
+export const verifyToken = async () => {
+  try {
+    const response = await api.get('/auth/verify');
+    return response.data;
+  } catch (error) {
+    throw error.response.data;
+  }
+};
+
 export const getUserProfile = async () => {
   try {
     const response = await api.get('/profile');
@@ -37,6 +46,7 @@ export const getUserProfile = async () => {
 export default {
   login,
   register,
+  verifyToken,
   getUserProfile,
   // Add other functions here
 };
