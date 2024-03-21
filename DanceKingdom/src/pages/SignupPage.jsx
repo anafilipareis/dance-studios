@@ -10,6 +10,7 @@ function SignUpPage() {
     username: "",
     email: "",
     password: "",
+    status: "student",  // Default status is student
   });
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
@@ -73,6 +74,17 @@ function SignUpPage() {
           onChange={handleInputChange}
           required
         />
+        <label>
+          Status:
+          <select
+            name="status"
+            value={userData.status}
+            onChange={handleInputChange}
+          >
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+        </label>
         <button type="submit">Sign Up</button>
       </form>
       {errorMessage && <p>{errorMessage}</p>}
