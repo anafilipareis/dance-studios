@@ -22,7 +22,10 @@ function Navbar() {
                 <span>Welcome {user.name}</span>
               </li>
               <li>
-                <Link to="/projects">Projects</Link>
+                <Link to="/dance-classes">Dance Styles</Link>
+              </li>
+              <li>
+                <Link to="/profile">Profile</Link>
               </li>
               <li>
                 <button onClick={logOutUser}>Logout</button>
