@@ -1,12 +1,13 @@
 
+import React from 'react';
+import MainCarousel from '../components/Carousel'; // Import your MainCarousel component
 
-function HomePage() {
-
-    return (
-        <div>
-            <h1> Home Page</h1>
-        </div>
-    );
-}
+const HomePage = () => {
+  return (
+    <div className="container">
+      <MainCarousel /> {/* Render the MainCarousel component */}
+    </div>
+  );
+};
 
 export default HomePage;

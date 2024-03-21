@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.VITE_DEPLOYMENT_URL,
+  baseURL: import.meta.env.VITE_DEPLOYMENT_URL, 
 });
 
-// CHECK THIS LATER!
+
 export const login = async (email, password) => {
   try {
     const response = await api.post('/auth/login', { email, password });
@@ -17,6 +17,15 @@ export const login = async (email, password) => {
 export const register = async (userData) => {
   try {
     const response = await api.post('/auth/signup', userData);
+    return response.data;
+  } catch (error) {
+    throw error.response.data;
+  }
+};
+
+export const verifyToken = async () => {
+  try {
+    const response = await api.get('/auth/verify');
     return response.data;
   } catch (error) {
     throw error.response.data;
@@ -37,6 +46,7 @@ export const getUserProfile = async () => {
 export default {
   login,
   register,
+  verifyToken,
   getUserProfile,
   // Add other functions here
 };

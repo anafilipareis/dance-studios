@@ -1,11 +1,8 @@
-
-
-
 function EditClassPage() {
 
     return (
         <div>
-            <h1> Teachers can edit their uploaded classes</h1>
+            <h1> These are the styles you can learn in our school</h1>
         </div>
     );
 }
