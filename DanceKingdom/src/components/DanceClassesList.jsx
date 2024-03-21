@@ -17,6 +17,8 @@ function DanceClassesList() {
     fetchDanceClasses();
   }, []);
 
+  console.log('User status:', localStorage.getItem('status'));
+
   const handleSubscribe = async (classId) => {
     try {
       await subscribeToClass(classId);
@@ -24,6 +26,11 @@ function DanceClassesList() {
     } catch (error) {
       console.error('Error subscribing to class:', error);
     }
+  };
+
+  const handleCreateNewClass = () => {
+    // Redirect to the page where teachers can create a new class
+    window.location.href = '/create-new-class';
   };
 
   return (
@@ -42,10 +49,15 @@ function DanceClassesList() {
       ) : (
         <p>No dance classes available</p>
       )}
+      {/* Render the "Create a New Class" button for teachers */}
+      {localStorage.getItem('status') === 'teacher' && (
+        <button onClick={handleCreateNewClass}>Create a New Class</button>
+      )}
     </div>
   );
 }
 
 export default DanceClassesList;
+
 
 
