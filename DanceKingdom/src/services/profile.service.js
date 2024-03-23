@@ -20,8 +20,8 @@ class ProfileService {
   }
 
   // GET /profile
-  getProfile = () => {
-    return this.api.get('/profile');
+  getProfile = ({id}) => {
+    return this.api.get(`/profile/${id}`);
   };
 
   // PUT /profile
