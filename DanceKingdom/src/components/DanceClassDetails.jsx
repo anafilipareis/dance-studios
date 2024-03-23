@@ -1,43 +1,12 @@
 // DanceClassDetails.jsx
 
 import React, { useState, useEffect, useContext } from 'react';
-import { useParams } from 'react-router-dom';
 import danceClassService from '../services/danceClass.services';
-import { AuthContext } from '../context/auth.context';
 
-function DanceClassDetails({  }) {
+
+function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
 //const [danceClass, setDanceClass] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const { user } = useContext(AuthContext);
-
-  const [danceClass, setDanceClass] = useState({
-    title: "",
-    description: "",
-    teacher: "",
-   day: "",
-   time: "",
-    video: "",
-    picture: null,
-    comments: ""
-  });
-
-const params=useParams()
-console.log(params)
-
-  useEffect(() => {
-    const fetchDanceClassDetails = async () => {
-      try {
-        const response = await danceClassService.getSingleClass(params.id);
-        setDanceClass(response.data);
-        setLoading(false);
-      } catch (error) {
-        console.error('Error fetching dance class details:', error);
-        setLoading(false);
-      }
-    };
-
-    fetchDanceClassDetails();
-  }, [params.id]);
+  console.log(user)
 
 
   const handleUpdate = async () => {
@@ -50,8 +19,9 @@ console.log(params)
             picture: danceClass.picture
           };
         
-      const updatedDanceClass = await danceClassService.updateSingleClass(danceClass._id, updatedData);      
-      setDanceClass(updatedDanceClass);
+      const updatedDanceClass = await danceClassService.updateSingleClass(danceClass._id, updatedData); 
+      console.log(updatedDanceClass)     
+      setDanceClass(updatedDanceClass.data);
       console.log("Dance class updated successfully");
     } catch (error) {
       console.error("Error updating dance class:", error);
@@ -182,6 +152,16 @@ console.log(params)
           <button onClick={handleDelete}>Delete</button>
         </>
       )}
+<h2>Comments</h2>
+      {danceClass?.comments?.map((comment) => { 
+        return (
+            <div key={comment._id}>
+                <h3>{comment.text} </h3> 
+                <h3>{comment.user.username}</h3> 
+            </div>
+        ) 
+
+      })}
       
     </div>   
     
