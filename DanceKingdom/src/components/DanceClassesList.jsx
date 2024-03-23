@@ -34,8 +34,8 @@ function DanceClassesList() {
         danceClasses.map((danceClass) => (
           <div key={danceClass._id} className="dance-class">
             <h2>{danceClass.title}</h2>
-            <p>Day: {danceClass.schedule.day}</p>
-            <p>Time: {danceClass.schedule.time}</p>
+            <p>Day: {danceClass.day}</p>
+            <p>Time: {danceClass.time}</p>
             <p>Teacher: {danceClass.teacher}</p>
             <button onClick={() => handleSubscribe(danceClass._id)}>More Information</button>
           </div>

@@ -6,9 +6,21 @@ import danceClassService from '../services/danceClass.services';
 import { AuthContext } from '../context/auth.context';
 
 function DanceClassDetails({  }) {
-  const [danceClass, setDanceClass] = useState(null);
+//const [danceClass, setDanceClass] = useState(null);
   const [loading, setLoading] = useState(true);
   const { user } = useContext(AuthContext);
+
+  const [danceClass, setDanceClass] = useState({
+    title: "",
+    description: "",
+    teacher: "",
+   day: "",
+   time: "",
+    video: "",
+    picture: null,
+    comments: ""
+  });
+
 const params=useParams()
 console.log(params)
 
@@ -31,14 +43,13 @@ console.log(params)
   const handleUpdate = async () => {
     try {     
         const updatedData = {
-            title: 'Updated Title',
-            schedule: {
-              day: 'Updated Day',
-              time: 'Updated Time'
-            },
-            description: 'Updated Description',
-            pictures: ['Updated Picture URL']
+            title: danceClass.title,
+              day: danceClass.day,
+              time: danceClass.time,
+            description: danceClass.description,
+            picture: danceClass.picture
           };
+        
       const updatedDanceClass = await danceClassService.updateSingleClass(danceClass._id, updatedData);      
       setDanceClass(updatedDanceClass);
       console.log("Dance class updated successfully");
@@ -109,12 +120,12 @@ console.log(params)
           {user && user.status === 'teacher' ? (
             <input
               type="text"
-              name="schedule.day"
-              value={danceClass.schedule.day}
+              name="day"
+              value={danceClass.day}
               onChange={handleInputChange}
             />
           ) : (
-            <>{danceClass.schedule.day}</>
+            <>{danceClass.day}</>
           )}
         </p>
         <p>
@@ -122,12 +133,12 @@ console.log(params)
           {user && user.status === 'teacher' ? (
             <input
               type="text"
-              name="schedule.time"
-              value={danceClass.schedule.time}
+              name="time"
+              value={danceClass.time}
               onChange={handleInputChange}
             />
           ) : (
-            <>{danceClass.schedule.time}</>
+            <>{danceClass.time}</>
           )}
         </p>
         <p>
@@ -163,7 +174,7 @@ console.log(params)
         </p>
       </div>
       <div>
-        <img src={danceClass.pictures[0]} alt="Dance Class" />
+        {/* <img src={danceClass.picture[0]} alt="Dance Class" /> */}
       </div>
       {user && user.status === 'teacher' && (
         <>

@@ -6,7 +6,8 @@ function AddDanceClass(props) {
     title: "",
     description: "",
     teacher: "",
-    schedule: { day: "", time: "" },
+    day:"",
+    time:"",
     spotsLeft: "",
     video: "",
     picture: null,
@@ -32,14 +33,15 @@ function AddDanceClass(props) {
           title: "",
           description: "",
           teacher: "",
-          schedule: { day: "", time: "" },
+          day:"",
+          time:"",
           spotsLeft: "",
           video: "",
           picture: null,
           favorites: "",
           comments: ""
         });
-        props.refreshDanceClasses();
+        // props.refreshDanceClasses();
       })
       .catch((error) => console.log(error));
   };
@@ -76,17 +78,17 @@ function AddDanceClass(props) {
         <label>Schedule:</label>
         <input
           type="text"
-          name="schedule_day"
+          name="day"
           placeholder="Day"
-          value={formData.schedule.day}
-          onChange={(e) => handleChange({ target: { name: "schedule", value: { ...formData.schedule, day: e.target.value } } })}
+          value={formData.day}
+          onChange={handleChange}
         />
         <input
           type="text"
-          name="schedule_time"
+          name="time"
           placeholder="Time"
-          value={formData.schedule.time}
-          onChange={(e) => handleChange({ target: { name: "schedule", value: { ...formData.schedule, time: e.target.value } } })}
+          value={formData.time}
+          onChange={handleChange}
         />
 
        
