@@ -21,7 +21,7 @@ class DanceClassService {
 
   // POST /dance-classes
   createDanceClass = requestBody => {
-    return this.api.post("/dance-classes", requestBody);
+    return this.api.post("/dance-classes/class/create", requestBody);
   };
  
   // GET /dance-classes

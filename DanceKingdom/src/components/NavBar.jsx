@@ -4,7 +4,7 @@ import { AuthContext } from "../context/auth.context";
 import logo from "../assets/logo.png"; // Import your logo image
 
 function Navbar() {
-  const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
+  const { isLoggedIn, logOutUser } = useContext(AuthContext);
   
 
   return (

@@ -2,13 +2,9 @@
 import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-
-
 import NavBar from "./components/NavBar";
 import IsPrivate from "./components/isPrivate";
 import IsAnon from "./components/isAnon";
-
-
 import HomePage from "./pages/HomePage";
 import DanceClassesPage from "./pages/DanceClassesPage";
 import ProfilePage from "./pages/ProfilePage";
@@ -18,9 +14,8 @@ import DanceClassDetails from "./components/DanceClassDetails";
 
 
 
+
 function App() {
-
-
 
   return (
     <div className="App">
