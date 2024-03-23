@@ -31,18 +31,19 @@ class DanceClassService {
  
   // GET /dance-classes/:id
   getSingleClass = id => {
-    return this.api.get(`/dance-classes/${id}`);
+    return this.api.get(`/dance-classes/class/${id}`);
   };
  
-  // PUT /dance-classes/:id
-  updateSingleClass = (id, requestBody) => {
-    return this.api.put(`/dance-classes/${id}`, requestBody);
-  };
+  // // PUT /dance-classes/:id
+  // updateSingleClass = (id, requestBody) => {
+  //   return this.api.put(`/dance-classes/${id}`, requestBody);
+  // };
  
-  // DELETE /dance-classes:id
-  deleteSingleClass = id => {
-    return this.api.delete(`/dance-classes/${id}`);
-  };
+  // // DELETE /dance-classes:id
+  // deleteSingleClass = id => {
+  //   return this.api.delete(`/dance-classes/${id}`);
+  // };
+  
 }
  
 // Create one instance object
