@@ -10,7 +10,7 @@ function SignUpPage() {
     username: "",
     email: "",
     password: "",
-    status: "student", // Default status
+    status: "student",  // Default status is student
   });
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
@@ -74,25 +74,17 @@ function SignUpPage() {
           onChange={handleInputChange}
           required
         />
-        <label htmlFor="status">Status:</label>
-        <select
-          name="status"
-          id="status"
-          value={userData.status}
-          onChange={handleInputChange}
-        >
-          <option value="student">Student</option>
-          <option value="teacher">Teacher</option>
-        </select>
-        <input
-          type="file"
-          name="picture"
-          accept="image/*"
-          onChange={(e) =>
-            setUserData({ ...userData, picture: e.target.files[0] })
-          }
-        />
-
+        <label>
+          Status:
+          <select
+            name="status"
+            value={userData.status}
+            onChange={handleInputChange}
+          >
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+        </label>
         <button type="submit">Sign Up</button>
       </form>
       {errorMessage && <p>{errorMessage}</p>}

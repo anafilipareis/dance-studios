@@ -10,14 +10,13 @@ import IsAnon from "./components/isAnon";
 // we still need an erorpage
 
 import HomePage from "./pages/HomePage";
-
-import DanceStylesPage from "./pages/DanceStylesPage";
+import DanceClassesPage from "./pages/DanceClassesPage";
 import ProfilePage from "./pages/ProfilePage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
+import IsPrivate from "./components/isPrivate";
+import IsAnon from "./components/isAnon";
 
-
-import EditClassPage from "./pages/EditClassPage";
 
 function App() {
 
@@ -29,9 +28,8 @@ function App() {
       
       <Routes>      
         <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/dance-styles" element={<DanceStylesPage />} />
+        <Route exact path="/dance-classes" element={<DanceClassesPage />} />
         <Route exact path="/profile" element={<IsPrivate><ProfilePage /></IsPrivate>} />
-        <Route exact path="/dance-classes/edit/:classId" element={<IsPrivate><EditClassPage /></IsPrivate>} />   
         <Route exact path="/signup" element={<IsAnon><SignupPage /></IsAnon>} /> 
         <Route exact path="/login" element={<IsAnon><LoginPage /></IsAnon>}/>       
       </Routes>

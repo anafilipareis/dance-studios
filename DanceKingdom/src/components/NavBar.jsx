@@ -24,7 +24,10 @@ function Navbar() {
                 <Link to="/profile">Profile</Link>
               </li>
               <li>
-                <Link to="/dance-classes">Classes</Link>
+                <Link to="/dance-classes">Dance Classes</Link>
+              </li>
+              <li>
+                <Link to="/profile">Profile</Link>
               </li>
               <li>
                 <button onClick={logOutUser}>Logout</button>

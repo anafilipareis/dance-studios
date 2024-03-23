@@ -41,6 +41,25 @@ export const getUserProfile = async () => {
   }
 };
 
+export const getAllDanceClasses = async () => {
+  try {
+    const response = await api.get('/dance-classes');
+    return response.data;
+  } catch (error) {
+    throw error.response.data;
+  }
+};
+
+export const subscribeToClass = async (classId) => {
+  try {
+    const response = await api.get(`/dance-classes/class/${classId}`);
+    return response.data;
+  } catch (error) {
+    throw error.response.data;
+  }
+};
+
+
 // Add other authentication-related functions as needed
 
 export default {
@@ -48,5 +67,7 @@ export default {
   register,
   verifyToken,
   getUserProfile,
+  getAllDanceClasses,
+  subscribeToClass,
   // Add other functions here
 };
