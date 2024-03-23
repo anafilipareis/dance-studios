@@ -79,8 +79,8 @@ console.log(params)
       }));
     }
   };
-  
 
+ 
   if (loading) {
     return <p>Loading...</p>;
   }
@@ -171,7 +171,9 @@ console.log(params)
           <button onClick={handleDelete}>Delete</button>
         </>
       )}
-    </div>
+      
+    </div>   
+    
   );
 }
 
