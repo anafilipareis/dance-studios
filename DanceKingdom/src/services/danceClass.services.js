@@ -36,12 +36,12 @@ class DanceClassService {
  
   // PUT /dance-classes/:id
   updateSingleClass = (id, requestBody) => {
-    return this.api.put(`/dance-classes/${id}`, requestBody);
+    return this.api.put(`/dance-classes/class/${id}`, requestBody);
   };
  
   // DELETE /dance-classes:id
   deleteSingleClass = id => {
-    return this.api.delete(`/dance-classes/${id}`);
+    return this.api.delete(`/dance-classes/class/${id}`);
   };
   
 }
