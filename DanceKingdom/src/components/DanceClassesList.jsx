@@ -17,18 +17,15 @@ function DanceClassesList() {
     fetchDanceClasses();
   }, []);
 
-  console.log('User status:', localStorage.getItem('status'));
-
   const handleSubscribe = async (classId) => {
     try {
-      await subscribeToClass(classId);
-      // Optionally, you can show a success message or update the state to reflect the subscription
+      // Instead of subscribing directly here, let's navigate to the class details page
+      // You can use the classId to construct the URL
+      window.location.href = `/dance-classes/class/${classId}`;
     } catch (error) {
-      console.error('Error subscribing to class:', error);
+      console.error('Error navigating to class details:', error);
     }
   };
-
-
 
   return (
     <div>
@@ -40,18 +37,18 @@ function DanceClassesList() {
             <p>Day: {danceClass.schedule.day}</p>
             <p>Time: {danceClass.schedule.time}</p>
             <p>Teacher: {danceClass.teacher}</p>
-            <button onClick={() => handleSubscribe(danceClass._id)}>Subscribe</button>
+            <button onClick={() => handleSubscribe(danceClass._id)}>More Information</button>
           </div>
         ))
       ) : (
         <p>No dance classes available</p>
       )}
-      
     </div>
   );
 }
 
 export default DanceClassesList;
+
 
 
 

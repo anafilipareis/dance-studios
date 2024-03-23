@@ -14,6 +14,7 @@ import DanceClassesPage from "./pages/DanceClassesPage";
 import ProfilePage from "./pages/ProfilePage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
+import DanceClassDetails from "./components/DanceClassDetails";
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Routes>      
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/dance-classes" element={<DanceClassesPage />} />
+        <Route exact path="/dance-classes/class/:id" element={<DanceClassDetails />} />
         <Route exact path="/profile" element={<IsPrivate><ProfilePage /></IsPrivate>} />
         <Route exact path="/signup" element={<IsAnon><SignupPage /></IsAnon>} /> 
         <Route exact path="/login" element={<IsAnon><LoginPage /></IsAnon>}/>       
