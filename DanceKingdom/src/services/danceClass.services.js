@@ -31,7 +31,7 @@ class DanceClassService {
  
   // GET /dance-classes/:id
   getSingleClass = id => {
-    return this.api.get(`/dance-classes/${id}`);
+    return this.api.get(`/dance-classes/class/${id}`);
   };
  
   // PUT /dance-classes/:id
@@ -43,6 +43,7 @@ class DanceClassService {
   deleteSingleClass = id => {
     return this.api.delete(`/dance-classes/${id}`);
   };
+  
 }
  
 // Create one instance object
