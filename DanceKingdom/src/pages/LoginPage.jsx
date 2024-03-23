@@ -24,7 +24,7 @@ function LoginPage(props) {
     e.preventDefault();
   //  const requestBody={email, password};
  
-    // axios.post(`${API_URL}/auth/login`, requestBody)
+  //  axios.post(`${API_URL}/auth/login`, requestBody)
    login(email, password)
       .then((response) => {
       // Request to the server's endpoint `/auth/login` returns a response
@@ -39,6 +39,7 @@ function LoginPage(props) {
       })
       .catch((error) => {
         const errorDescription = error.response.data.message;
+        
         setErrorMessage(errorDescription);
       })
   };

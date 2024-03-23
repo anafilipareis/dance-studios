@@ -1,13 +1,26 @@
+import AddDanceClass from "../components/AddDanceClass";
+import ProfileInfo from "../components/ProfileInfo";
+
 
 
 
 function ProfilePage() {
 
     return (
-        <div>
-            <h1> Profile page teahcers and students are authenticated differently</h1>
-        </div>
-    );
+
+        <>
+
+       
+        <ProfileInfo />
+
+        <AddDanceClass />
+
+        
+        </>
+
+       
+        
+    );  
 }
 
 export default ProfilePage;
