@@ -7,15 +7,14 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import IsPrivate from "./components/isPrivate";
 import IsAnon from "./components/isAnon";
-// we still need an erorpage
+
 
 import HomePage from "./pages/HomePage";
 import DanceClassesPage from "./pages/DanceClassesPage";
 import ProfilePage from "./pages/ProfilePage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
-import IsPrivate from "./components/isPrivate";
-import IsAnon from "./components/isAnon";
+
 
 
 function App() {

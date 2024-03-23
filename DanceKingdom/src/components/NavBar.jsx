@@ -12,7 +12,7 @@ function Navbar() {
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
       </div>
-      {/* <span>Welcome {user.name}</span> */}
+     
       <nav className="nav-buttons">
         <ul>
           <li>
@@ -26,9 +26,7 @@ function Navbar() {
               <li>
                 <Link to="/dance-classes">Dance Classes</Link>
               </li>
-              <li>
-                <Link to="/profile">Profile</Link>
-              </li>
+             
               <li>
                 <button onClick={logOutUser}>Logout</button>
               </li>
