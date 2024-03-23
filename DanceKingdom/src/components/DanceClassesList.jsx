@@ -28,10 +28,7 @@ function DanceClassesList() {
     }
   };
 
-  const handleCreateNewClass = () => {
-    // Redirect to the page where teachers can create a new class
-    window.location.href = '/create-new-class';
-  };
+
 
   return (
     <div>
@@ -49,10 +46,7 @@ function DanceClassesList() {
       ) : (
         <p>No dance classes available</p>
       )}
-      {/* Render the "Create a New Class" button for teachers */}
-      {localStorage.getItem('status') === 'teacher' && (
-        <button onClick={handleCreateNewClass}>Create a New Class</button>
-      )}
+      
     </div>
   );
 }
