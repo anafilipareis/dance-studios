@@ -5,7 +5,7 @@ import axios from 'axios';
 class CommentService {
     constructor() {
         this.api = axios.create({
-          baseURL: import.meta.env.SERVER_URL || 'http://localhost:5005'
+          baseURL: import.meta.env.VITE_DEPLOYMENT_URL
         });
     
         // Automatically set JWT token in the headers for every request
