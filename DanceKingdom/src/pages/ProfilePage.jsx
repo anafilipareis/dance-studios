@@ -1,26 +1,19 @@
-import AddDanceClass from "../components/AddDanceClass";
-import ProfileInfo from "../components/ProfileInfo";
-
-
-
+import React, { useContext } from 'react';
+import AddDanceClass from '../components/AddDanceClass';
+import ProfileInfo from '../components/ProfileInfo';
+import { AuthContext } from '../context/auth.context';
 
 function ProfilePage() {
+  const { user } = useContext(AuthContext);
 
-    return (
+  const isTeacher = user && user.status === 'teacher';
 
-        <>
-
-       
-        <ProfileInfo />
-
-        <AddDanceClass />
-
-        
-        </>
-
-       
-        
-    );  
+  return (
+    <>
+      <ProfileInfo />
+      {isTeacher && <AddDanceClass />}
+    </>
+  );
 }
 
 export default ProfilePage;

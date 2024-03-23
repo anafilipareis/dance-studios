@@ -18,42 +18,31 @@ function AuthProviderWrapper(props) {
     }
 
     const authenticateUser = () => {
-      // update the authentication state variables according to whether 
-      // there's a token in localStorage or not
-      // if there's a token ---> validate the token ---> update the state variables 
-      // else ---> update the state variables accordingly
-      const storedToken = localStorage.getItem('authToken'); // --> uwgdugdgwgaidg || undefined
+      const storedToken = localStorage.getItem('authToken');
     
-      // If the token exists in the localStorage
       if (storedToken) {
-        // We must send the JWT token in the request's "Authorization" Headers
         axios.get(
           `${API_URL}/auth/verify`, 
           { headers: { Authorization: `Bearer ${storedToken}`} }
         )
         .then((response) => {
-          // If the server verifies that the JWT token is valid  
-          const user = response.data;
-        // Update state variables        
+          const userData = response.data;
           setIsLoggedIn(true);
           setIsLoading(false);
-          setUser(user);        
+          setUser(userData); // Set the user data received from the server
         })
         .catch((error) => {
-          // If the server sends an error response (invalid token) 
-          // Update state variables         
           setIsLoggedIn(false);
           setIsLoading(false);
-          setUser(null);        
+          setUser(null);
         });      
       } else {
-        // If the token is not available (or is removed)
-          setIsLoggedIn(false);
-          setIsLoading(false);
-          setUser(null);      
+        setIsLoggedIn(false);
+        setIsLoading(false);
+        setUser(null);
       } 
     }
-
+  
     const removeToken = () => {                    // <== ADD
       // Upon logout, remove the token from the localStorage
       localStorage.removeItem("authToken");
