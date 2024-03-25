@@ -24,20 +24,100 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  /* margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px; 
   min-height: 10vh;
   /* Move background color and text color settings to body */
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  /* background-color: var(--bg-color);
+  color: var(--text-color); */ 
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+
+.navbar {
+
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 10px 20px;
+  color: white;
+  top: 0;
+  left: 0;
+  /* trying to put the navbar to the left */
+  position: fixed;
+  width: 100%; 
+  max-width: 1590px; 
+  z-index: 1000;
+
+  /*adding a background image to the navbar */
+  background-image: url('./assets/navbarback.jpg'); 
+  background-size: cover; 
+ 
+  z-index: 1000;
+
+
+ 
+}
+
+.logo {
+  height: 150px; /* Adjust the height as needed */
+  
+}
+
+
+.nav-buttons {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.nav-buttons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons ul li {
+  margin-right: 20px; /* Add some gap between the links */
+}
+
+.nav-buttons ul li:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+.nav-buttons ul li a {
+  text-decoration: none;
+  color: #646cff;
+  padding: 8px 12px; /* padding for spacing */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Light pink background */
+.nav-buttons ul li a {
+  background-color: #f9d6d9; /* Very light pink */
+  
+}
+
+/* Darker pink background on hover */
+.nav-buttons ul li a:hover {
+  background-color: #f29ab2; /* Darker pink */
+  transform: translateY(-2px); /* Move the link up slightly */
+}
+
+/* To make the links appear slightly outlined */
+.nav-buttons ul li a {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); /* Add very light outline */
+}
+
 
 button {
   border-radius: 8px;
@@ -46,9 +126,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #da2525;
   cursor: pointer;
   transition: border-color 0.25s;
+  vertical-align: middle;
 }
 button:hover {
   border-color: #646cff;
@@ -71,53 +152,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-
-
-
-.nav-buttons {
-  display: flex;
-  align-items: center; /* Align items vertically */
-}
-
-.nav-buttons ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav-buttons ul li {
-  margin-right: 20px; /* Add some gap between the links */
-}
-
-.nav-buttons ul li a {
-  text-decoration: none;
-  color: #646cff;
-  padding: 8px 12px; /* Add padding for spacing */
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-/* Light pink background */
-.nav-buttons ul li a {
-  background-color: #f9d6d9; /* Very light pink */
-}
-
-/* Darker pink background on hover */
-.nav-buttons ul li a:hover {
-  background-color: #f29ab2; /* Darker pink */
-  transform: translateY(-2px); /* Move the link up slightly */
-}
-
-/* To make the links appear slightly outlined */
-.nav-buttons ul li a {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); /* Add very light outline */
-}
-
-
-
 
 
 
