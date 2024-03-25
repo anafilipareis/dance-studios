@@ -52,7 +52,7 @@ h1 {
   /* trying to put the navbar to the left */
   position: fixed;
   width: 100%; 
-  max-width: 1590px; 
+  max-width: 100vw; 
   z-index: 1000;
 
   /*adding a background image to the navbar */
@@ -154,10 +154,16 @@ button:focus-visible {
 }
 
 
+.LoginPage {
+
+margin-top: 200px;
+}
 
 
+.SignupPage {
 
-
+  margin-top: 200px;
+  }
 
 
 

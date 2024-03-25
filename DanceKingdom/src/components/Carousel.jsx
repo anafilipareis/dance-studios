@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import one from '../assets/ballet_homepage.jpg';
-import two from '../assets/hiphop_homepage.jpg';
-import three from '../assets/salsa_homepage.jpg';
+import one from '../assets/slideshowmale.jpg';
+import two from '../assets/slideshowballet.jpg';
+import three from '../assets/slideshowclass.jpg';
+import four from '../assets/slideshowsenior.jpg';
+import five from '../assets/slideshowkid.jpg';
+import six from '../assets/slideshowcontem.jpg';
+import seven from '../assets/slideshowgroup.jpg';
 import '../App.css'; // Import custom CSS for styling
 
 function MainCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const images = [one, two, three];
+  const images = [one, two, three, four, five, six, seven];
   const numImages = images.length;
 
   useEffect(() => {
