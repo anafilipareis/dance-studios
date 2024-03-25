@@ -34,6 +34,7 @@ function SignUpPage() {
     <div className="SignupPage">
       <h1>Signup Page</h1>
       <form onSubmit={handleSignUpSubmit}>
+        <p>
         <input
           type="text"
           name="firstName"
@@ -41,7 +42,8 @@ function SignUpPage() {
           value={userData.firstName}
           onChange={handleInputChange}
           required
-        />
+        /></p>
+        <p>
         <input
           type="text"
           name="lastName"
@@ -49,7 +51,8 @@ function SignUpPage() {
           value={userData.lastName}
           onChange={handleInputChange}
           required
-        />
+        /></p>
+        <p>
         <input
           type="text"
           name="username"
@@ -57,7 +60,8 @@ function SignUpPage() {
           value={userData.username}
           onChange={handleInputChange}
           required
-        />
+        /></p>
+        <p>
         <input
           type="email"
           name="email"
@@ -65,7 +69,7 @@ function SignUpPage() {
           value={userData.email}
           onChange={handleInputChange}
           required
-        />
+        /></p>
         <input
           type="password"
           name="password"
@@ -73,7 +77,7 @@ function SignUpPage() {
           value={userData.password}
           onChange={handleInputChange}
           required
-        />
+        /><p>
         <label>
           Status:
           <select
@@ -84,8 +88,9 @@ function SignUpPage() {
             <option value="student">Student</option>
             <option value="teacher">Teacher</option>
           </select>
-        </label>
-        <button type="submit">Sign Up</button>
+        </label></p>
+        <p>
+        <button type="submit">Sign Up</button></p>
       </form>
       {errorMessage && <p>{errorMessage}</p>}
       <p>
