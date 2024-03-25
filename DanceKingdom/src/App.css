@@ -12,7 +12,8 @@
 
 /* Carousel Stuff */
 .carousel-container {
-  width: 100vw;
+
+  width: auto;
   overflow: hidden; /* Hide overflow to prevent horizontal scrolling */
 }
 
