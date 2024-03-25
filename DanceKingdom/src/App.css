@@ -1,21 +1,10 @@
-#root {
+/* #root {
   max-width: 1590px;
   margin: 0 0;
-  padding: 0; /* Remove padding to reduce extra space at the top */
-}
+  padding: 0; 
+} */
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  /* background-color: #333; */
-  color: white;
-}
 
-.logo {
-  height: 150px; /* Adjust the height as needed */
-}
 
 .read-the-docs {
   color: #888;
