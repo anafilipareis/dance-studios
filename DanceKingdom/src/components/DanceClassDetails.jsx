@@ -144,6 +144,21 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
         </p>
       </div>
       <div>
+        <p>
+          Watch out our Dance Class:
+          {user && user.status === 'teacher' ? (
+            <input
+              type="text"
+              name="video"
+              value={danceClass.video}
+              onChange={handleInputChange}
+            />
+          ) : (
+            <>{danceClass.video}</>
+          )}
+        </p>
+      </div>
+      <div>
         {/* <img src={danceClass.picture[0]} alt="Dance Class" /> */}
       </div>
       {user && user.status === 'teacher' && (

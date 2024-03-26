@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getAllDanceClasses, subscribeToClass } from '../services/auth.service';
+import { Card, Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function DanceClassesList() {
   const [danceClasses, setDanceClasses] = useState([]);
@@ -28,22 +31,27 @@ function DanceClassesList() {
   };
 
   return (
-    <div>
+    <div style={{ padding: '200px' }}>
+    
       <h1>Dance Classes</h1>
-      {danceClasses.length > 0 ? (
-        danceClasses.map((danceClass) => (
-          <div key={danceClass._id} className="dance-class">
-            <h2>{danceClass.title}</h2>
-            <p>Day: {danceClass.day}</p>
-            <p>Time: {danceClass.time}</p>
-            <p>Teacher: {danceClass.teacher}</p>
-            <button onClick={() => handleSubscribe(danceClass._id)}>More Information</button>
-            <button onClick={() => alert('You successfully subscribed for the class')}> Subscribe </button>
-          </div>
-        ))
-      ) : (
-        <p>No dance classes available</p>
-      )}
+      <Container>
+      <Row xs={1} md={2} lg={2}>
+        {danceClasses.map((danceClass) => (
+          <Col key={danceClass._id} className="mb-4">
+            <Card className="dance-class">
+              <Card.Body>
+                <Card.Title>{danceClass.title}</Card.Title>
+                <Card.Text>Day: {danceClass.day}</Card.Text>
+                <Card.Text>Time: {danceClass.time}</Card.Text>
+                <Card.Text>Teacher: {danceClass.teacher}</Card.Text>
+                <button className="btn btn-primary mr-2" onClick={() => handleSubscribe(danceClass._id)}>More Information</button>
+                <button className="btn btn-success" onClick={() => alert('You successfully subscribed for the class')}> Subscribe </button>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Container>
     </div>
   );
 }
