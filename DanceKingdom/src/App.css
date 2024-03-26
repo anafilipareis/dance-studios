@@ -6,31 +6,51 @@
 
 
 
-.read-the-docs {
+/* .read-the-docs {
   color: #888;
 }
 
 /* Carousel Stuff */
+
+.container {
+  display: flex;
+  position: inherit;
+  
+}
+
 .carousel-container {
 
   width: auto;
-  overflow: hidden; /* Hide overflow to prevent horizontal scrolling */
+  overflow: hidden; 
+  
+  
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 1s ease; /* Adjust the timing for a smoother transition */
+  transition: transform 1s ease; 
 }
 
 .carousel-image {
   width: 100%;
-  opacity: 0; /* Initially hide all images */
-  position: absolute; /* Position images absolutely for individual control */
-  transition: opacity 1s ease; /* Apply the same transition to each image */
+  opacity: 0; 
+  position: absolute; 
+  transition: opacity 1s ease; 
 }
 
 .carousel-image.active {
-  opacity: 1; /* Show the active image */
-}
+  opacity: 1; 
+} 
 
+
+.content {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  margin-top: 1200px; /* Adjust top margin as needed */
+  margin-bottom: 300px; /* Adjust bottom margin as needed */
+}
 
