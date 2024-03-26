@@ -170,9 +170,9 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
 <h2>Comments</h2>
       {danceClass?.comments?.map((comment) => { 
         return (
-            <div key={comment._id}>
-                <h3>{comment.text} </h3> 
-                <h3>{comment.user.username}</h3> 
+            <div key={comment._id}>   
+                <h5>{comment.user.username} says:</h5> 
+                <h>{comment.text} </h> 
             </div>
         ) 
 
