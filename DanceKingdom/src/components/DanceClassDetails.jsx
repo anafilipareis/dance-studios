@@ -9,6 +9,7 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
 
   console.log(user)
   const navigate = useNavigate();
+  const [pictureFile, setPictureFile] = useState(null);
 
 
   const handleUpdate = async () => {
@@ -42,6 +43,34 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
       console.error("Error deleting dance class:", error);
     }
   };
+
+  // const handlePictureChange = (e) => {
+  //   // Set the picture file when the input changes
+  //   setPictureFile(e.target.files[0]);
+  // };
+
+  // const handleUpdatePicture = async () => {
+  //   try {
+  //     // Check if a picture file has been selected
+  //     if (!pictureFile) {
+  //       console.error("No picture file selected");
+  //       return;
+  //     }
+
+  //     // Create form data to send to the server
+  //     const formData = new FormData();
+  //     formData.append('picture', pictureFile);
+
+  //     // Send a request to update the picture
+  //     const updatedDanceClass = await danceClassService.updatePicture(danceClass._id, formData);
+  //     // Update the dance class with the new picture
+  //     setDanceClass(updatedDanceClass.data);
+
+  //     console.log("Picture updated successfully");
+  //   } catch (error) {
+  //     console.error("Error updating picture:", error);
+  //   }
+  // };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -164,7 +193,22 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
         </p>
       </div>
       <div>
-        {/* <img src={danceClass.picture[0]} alt="Dance Class" /> */}
+          {/* Render the current picture */}
+          {/* <img src={danceClass.picture} alt="Dance Class" /> */}
+
+         {/* Input to select a new picture */}
+      {/* {user && user.status === 'teacher' && (
+        <div>
+          <input
+            type="file"
+            name="picture"
+            accept="image/*"
+            onChange={handlePictureChange}
+          />
+          <button onClick={handleUpdatePicture}>Update Picture</button>
+        </div>
+      )} */}
+
       </div>
       {user && user.status === 'teacher' && (
         <>
@@ -183,7 +227,8 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
 
       })}
       
-    </div>   
+    </div>  
+     
     
   );
 }
