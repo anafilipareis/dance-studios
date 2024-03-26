@@ -38,6 +38,7 @@ function DanceClassesList() {
             <p>Time: {danceClass.time}</p>
             <p>Teacher: {danceClass.teacher}</p>
             <button onClick={() => handleSubscribe(danceClass._id)}>More Information</button>
+            <button onClick={() => alert('You successfully subscribed for the class')}> Subscribe </button>
           </div>
         ))
       ) : (
