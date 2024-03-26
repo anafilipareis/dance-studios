@@ -31,7 +31,7 @@ function DanceClassesList() {
   };
 
   return (
-    <div style={{ padding: '200px' }}>
+    <div style={{ padding: '50px' }}>
     
       <h1>Dance Classes</h1>
       <Container>

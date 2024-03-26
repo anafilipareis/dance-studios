@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
-//const [danceClass, setDanceClass] = useState(null);
+
   console.log(user)
   const navigate = useNavigate();
 
@@ -25,6 +25,7 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
       console.log(updatedDanceClass)     
       setDanceClass(updatedDanceClass.data);
       console.log("Dance class updated successfully");
+      navigate("/dance-classes")
     } catch (error) {
       console.error("Error updating dance class:", error);
     }
@@ -76,7 +77,7 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
 
   return (
     <div>
-      <h1>
+      <h3>
         {user && user.status === 'teacher' ? (
           <input
             type="text"
@@ -87,7 +88,7 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
         ) : (
           <>{danceClass.title}</>
         )}
-      </h1>
+      </h3>
       <div>
         <p>
           Day:
@@ -171,7 +172,7 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
           <button onClick={handleDelete}>Delete</button>
         </>
       )}
-<h2>Comments</h2>
+{/* <h2>Comments</h2> */}
       {danceClass?.comments?.map((comment) => { 
         return (
             <div key={comment._id}>   
