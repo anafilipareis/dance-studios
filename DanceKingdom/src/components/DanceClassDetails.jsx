@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect, useContext } from 'react';
 import danceClassService from '../services/danceClass.services';
+import { useNavigate } from 'react-router-dom';
 
 
 function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
 //const [danceClass, setDanceClass] = useState(null);
   console.log(user)
+  const navigate = useNavigate();
 
 
   const handleUpdate = async () => {
@@ -33,6 +35,8 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
      
       await danceClassService.deleteSingleClass(danceClass._id);      
       console.log("Dance class deleted successfully");
+      navigate("/dance-classes")
+
     } catch (error) {
       console.error("Error deleting dance class:", error);
     }

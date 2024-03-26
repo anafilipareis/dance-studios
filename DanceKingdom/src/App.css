@@ -47,10 +47,10 @@
   width: auto;
   height: auto;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  margin-top: 1200px; /* Adjust top margin as needed */
-  margin-bottom: 300px; /* Adjust bottom margin as needed */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 1200px; 
+  margin-bottom: 300px;
 }
 
