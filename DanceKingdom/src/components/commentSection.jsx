@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import commentService from '../services/comment.services'; // Import your comment service
 import { useParams } from 'react-router-dom';
 
+
 function CommentSection({setDanceClass, danceClass}) {
   const [newCommentText, setNewCommentText] = useState('');
   const params = useParams();
@@ -28,6 +29,7 @@ function CommentSection({setDanceClass, danceClass}) {
 
   return (
     <div>
+
       <h2>Comments</h2>
       <textarea
         value={newCommentText}

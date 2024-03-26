@@ -1,29 +1,14 @@
-/* #root {
-  max-width: 1590px;
-  margin: 0 0;
-  padding: 0; 
-} */
-
-
-
-/* .read-the-docs {
-  color: #888;
-}
 
 /* Carousel Stuff */
 
 .container {
   display: flex;
   position: inherit;
-  
 }
 
 .carousel-container {
-
   width: auto;
-  overflow: hidden; 
-  
-  
+  overflow: hidden;   
 }
 
 .carousel-track {
@@ -41,7 +26,6 @@
 .carousel-image.active {
   opacity: 1; 
 } 
-
 
 .content {
   width: auto;

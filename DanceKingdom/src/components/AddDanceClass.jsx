@@ -1,7 +1,9 @@
 import { useState } from "react";
 import danceClassService from "../services/danceClass.services";
+import { useNavigate } from 'react-router-dom';
 
 function AddDanceClass(props) {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -40,9 +42,11 @@ function AddDanceClass(props) {
           picture: null,
           favorites: "",
           comments: ""
-        });
-        // props.refreshDanceClasses();
+        })
+        
+        navigate("/dance-classes");
       })
+      
       .catch((error) => console.log(error));
   };
 

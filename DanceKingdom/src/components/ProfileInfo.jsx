@@ -4,6 +4,7 @@ import { AuthContext } from "../context/auth.context";
 import profileService from "../services/profile.service"; // Import profileService instead of userService
 import danceClassService from "../services/danceClass.services"; // Import DanceClassService
 
+
 function ProfileInfo() {
   const { user: userInfo } = useContext(AuthContext);
 
