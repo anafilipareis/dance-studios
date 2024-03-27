@@ -209,6 +209,19 @@ margin-top: 200px;
   margin-bottom: 20px;
 }
 
+.prices-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+}
+
+.price-box {
+  width: 200px; /* Adjust the width as needed */
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
 
 
 
