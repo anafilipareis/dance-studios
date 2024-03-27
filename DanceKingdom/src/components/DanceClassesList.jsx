@@ -41,9 +41,9 @@ function DanceClassesList() {
             <Card className="dance-class">
               <Card.Body>
                 <Card.Title>{danceClass.title}</Card.Title>
-                <Card.Text>Day: {danceClass.day}</Card.Text>
-                <Card.Text>Time: {danceClass.time}</Card.Text>
-                <Card.Text>Teacher: {danceClass.teacher}</Card.Text>
+                <Card.Text>📅 Day: {danceClass.day}</Card.Text>
+                <Card.Text>⏰ Time: {danceClass.time}</Card.Text>
+                <Card.Text>👩‍🏫 Teacher: {danceClass.teacher}</Card.Text>
                 <button className="btn btn-primary mr-2" onClick={() => handleSubscribe(danceClass._id)}>More Information</button>
                 <button className="btn btn-success" onClick={() => alert('You successfully subscribed for the class')}> Subscribe </button>
               </Card.Body>
