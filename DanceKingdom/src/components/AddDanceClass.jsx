@@ -52,9 +52,10 @@ function AddDanceClass(props) {
 
   return (
     <div className="AddClass">
-      <h3>Add Dance Class</h3>
+      <h3>Add a New Dance Class</h3>
 
       <form onSubmit={handleSubmit}>
+        <p>
         <label>Title:</label>
         <input
           type="text"
@@ -62,41 +63,42 @@ function AddDanceClass(props) {
           value={formData.title}
           onChange={handleChange}
         />
-
+        </p>
+        <p>
         <label>Description:</label>
         <textarea
           type="text"
           name="description"
           value={formData.description}
           onChange={handleChange}
-        />
-
+        /></p>
+        <p>
         <label>Teacher:</label>
         <input
           type="text"
           name="teacher"
           value={formData.teacher}
           onChange={handleChange}
-        />
-
-        <label>Schedule:</label>
+        /></p>
+        <p>
+        <p><label>Schedule:</label></p>
+        <label>Day:</label>
         <input
           type="text"
           name="day"
           placeholder="Day"
           value={formData.day}
           onChange={handleChange}
-        />
+        /></p>
+        <p><label>Time:</label>
         <input
           type="text"
           name="time"
           placeholder="Time"
           value={formData.time}
           onChange={handleChange}
-        />
-
-       
-
+        /></p>
+       <p>
         <label>Video (YouTube Embed Link):</label>
         <input
           type="text"
@@ -104,7 +106,7 @@ function AddDanceClass(props) {
           value={formData.video}
           onChange={handleChange}
           placeholder="Paste YouTube embed link..."
-        />
+        /></p>
         {/* Display video preview */}
         {formData.video && (
           <div className="video-preview">
@@ -119,14 +121,14 @@ function AddDanceClass(props) {
             ></iframe>
           </div>
         )}
-
+        <p>
         <label>Picture:</label>
         <input
           type="file"
           name="picture"
           accept="image/*"
           onChange={(e) => setFormData({ ...formData, picture: e.target.files[0] })}
-        />
+        /></p>
 
 
         <button type="submit">Submit</button>
