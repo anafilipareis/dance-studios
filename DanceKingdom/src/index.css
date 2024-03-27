@@ -183,6 +183,32 @@ margin-top: 200px;
 }
 
 
+/* ProfilePage css */
+.profile-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile-info-box {
+  flex: 1;
+}
+
+.add-dance-class-box {
+  flex: 1;
+  max-width: 400px; /* Adjust as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-dance-class-box h2 {
+  margin-bottom: 20px;
+}
+
 
 
 
