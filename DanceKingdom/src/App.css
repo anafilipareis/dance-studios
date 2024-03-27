@@ -1,25 +1,28 @@
 
 /* Carousel Stuff */
 
-.container {
-  display: flex;
-  position: inherit;
-}
+ .container {
+  max-width: 100%!important;
+  padding: 0 !important;
+} 
 
 .carousel-container {
-  width: auto;
+  width:100%;
   overflow: hidden;   
 }
 
 .carousel-track {
   display: flex;
+  height: 100vh;
   transition: transform 1s ease; 
 }
 
 .carousel-image {
+
   width: 100%;
+  height: 100%;
   opacity: 0; 
-  position: absolute; 
+  position: absolute;
   transition: opacity 1s ease; 
 }
 
@@ -34,7 +37,11 @@
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
-  margin-top: 1200px; 
-  margin-bottom: 300px;
+   
+  
+  padding: 16px;
+  max-width: 1320px;
+  margin: 96px auto;
+
 }
 

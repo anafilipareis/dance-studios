@@ -146,17 +146,7 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
           )}
         </p>
         <p>
-          Teacher:
-          {user && user.status === 'teacher' ? (
-            <input
-              type="text"
-              name="teacher"
-              value={danceClass.teacher}
-              onChange={handleInputChange}
-            />
-          ) : (
-            <>{danceClass.teacher}</>
-          )}
+          Teacher:{danceClass.teacher.firstName}
         </p>
         <p>
           Spots Left: {danceClass.spotsLeft}
