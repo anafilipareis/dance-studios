@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import AddDanceClass from '../components/AddDanceClass';
 import ProfileInfo from '../components/ProfileInfo';
 import { AuthContext } from '../context/auth.context';
+import Footer from '../components/footer'; // Import the Footer component
 import '../index.css';
 
 function ProfilePage() {
@@ -10,17 +11,19 @@ function ProfilePage() {
   const isTeacher = user && user.status === 'teacher';
 
   return (
+    <>
     <div className="profile-page-container">
       <div className="profile-info-box">
         <ProfileInfo />
       </div>
       {isTeacher && (
         <div className="add-dance-class-box">
-          
           <AddDanceClass />
         </div>
       )}
-    </div>
+      
+    </div> 
+    <Footer /> </>
   );
 }
 
