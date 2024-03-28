@@ -81,7 +81,7 @@ h1 {
 
 /* Light pink background */
 .nav-buttons ul li a {
-  background-color: #f9d6d9; 
+  background-color: white; 
   
 }
 
@@ -159,18 +159,7 @@ button:focus-visible {
   margin-bottom: 20px;
 }
 
-.prices-container {
-  display: flex;
-  justify-content: space-between; /* Adjust as needed */
-}
 
-.price-box {
-  width: 200px; /* Adjust the width as needed */
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-  margin: 0 10px; /* Adjust the margin as needed */
-}
 
 
 
