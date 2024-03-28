@@ -29,15 +29,15 @@ function LoginPage(props) {
   //  axios.post(`${API_URL}/auth/login`, requestBody)
    login(email, password)
       .then((response) => {
-      // Request to the server's endpoint `/auth/login` returns a response
-      // with the JWT string ->  response.data.authToken
+    
+      
         console.log('JWT token', response.authToken );
-        storeToken(response.authToken) // this will store the token in localStorage
-        localStorage.setItem('status', response.status); // Set the user status in local storage   
+        storeToken(response.authToken) 
+        localStorage.setItem('status', response.status); 
       })
       .then(()=> {
-        authenticateUser() // update the auth state variables accordingly
-        navigate('/');                             // <== ADD   
+        authenticateUser() 
+        navigate('/');                            
       })
       .catch((error) => {
         const errorDescription = error.response.data.message;
@@ -48,6 +48,7 @@ function LoginPage(props) {
 
   
   return (
+   <div className="LPbackground">
     <div className="LoginPage">
       <h1>Login</h1>
  
@@ -75,6 +76,7 @@ function LoginPage(props) {
       <p>Don't have an account yet?</p>
       <Link to={"/signup"}> Sign Up</Link>
     </div>
+   </div>
   )
 }
  
