@@ -1,6 +1,7 @@
-
 import React from 'react';
 import MainCarousel from '../components/Carousel'; // Import your MainCarousel component
+import '../styles/homePageStyles.css';
+import Footer from '../components/footer';
 
 const HomePage = () => {
   return (
@@ -22,15 +23,15 @@ const HomePage = () => {
           <h2>Information</h2>
           <div className="prices-container">
             <div className="price-box">
-              <h3>1 class</h3>
+              <h3>20€ / 1 class</h3>
               <p>€20</p>
             </div>
             <div className="price-box">
-              <h3>5 classes</h3>
+              <h3>80€ / 5 classes</h3>
               <p>€80</p>
             </div>
             <div className="price-box">
-              <h3>10 classes</h3>
+              <h3>120€ / 10 classes</h3>
               <p>€120</p>
             </div>
             <div className="price-box">
@@ -45,7 +46,12 @@ const HomePage = () => {
           {/* Add your contact form or contact information here */}
         </div>
       </div>
+
+      <div>
+      <Footer />
     </div>
+    </div>
+    
   );
 };
 

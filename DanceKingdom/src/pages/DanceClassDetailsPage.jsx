@@ -6,6 +6,8 @@ import { AuthContext } from '../context/auth.context';
 import CommentSection from '../components/commentSection'; // Import the CommentSection component
 import danceClassService from '../services/danceClass.services';
 import { Container, Row, Col } from 'react-bootstrap';
+import '../styles/danceDetailsPageStyles.css';
+import Footer from '../components/footer';
 
 function DanceClassDetailsPage() {
   const { user } = useContext(AuthContext);
@@ -41,13 +43,14 @@ console.log(params)
   }, [params.id]);
 
   return (
-    <Container>
+    <>
+    <Container className="d-flex flex-column min-vh-100">
       <Row>
         <Col md={12}>
           <div className="title-wrapper">
             <h2 className="pt-3">Dance Class Details</h2>
           </div>
-          <img src={danceClass.picture} alt="Dance Class" className="dance-class-image" />
+          {/* <img src={danceClass.picture} alt="Dance Class" className="dance-class-image" /> */}
         </Col>
       </Row>
       <Row>
@@ -63,6 +66,8 @@ console.log(params)
         </Col>
       </Row>
     </Container>
+     <Footer /> {/* Render the Footer component */}
+     </>
   );
 }
 
