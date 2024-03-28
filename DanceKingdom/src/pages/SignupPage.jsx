@@ -32,6 +32,7 @@ function SignUpPage() {
   };
 
   return (
+   <div className="subackground">
     <div className="SignupPage">
       <h1>Signup Page</h1>
       <form onSubmit={handleSignUpSubmit}>
@@ -98,6 +99,7 @@ function SignUpPage() {
         Already have an account? <Link to="/login">Login</Link>
       </p>
     </div>
+   </div>
   );
 }
 
