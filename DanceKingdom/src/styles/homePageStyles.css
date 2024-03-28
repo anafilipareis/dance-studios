@@ -1,4 +1,5 @@
 
+
 /* Carousel Stuff */
 
 .container {
@@ -48,9 +49,26 @@
     width: 1000px;
   }
 
-  .information {
+  .watch-our-classes{
     width: 1000px;
+    margin-top: 50px;
   }
+
+
+  .prices-contact-section {
+    width: 1000px;
+    margin-top: 50px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .prices,
+.contact-us {
+  flex: 1; /* Make both elements flexible */
+}
+
+
 
   /* footer */
   .footer {
