@@ -6,7 +6,7 @@ import four from '../assets/slideshowsenior.jpg';
 import five from '../assets/slideshowkid.jpg';
 import six from '../assets/slideshowcontem.jpg';
 import seven from '../assets/slideshowgroup.jpg';
-import '../App.css'; // Import custom CSS for styling
+
 
 function MainCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
