@@ -97,19 +97,19 @@ h1 {
 
 /* Light pink background */
 .nav-buttons ul li a {
-  background-color: #f9d6d9; /* Very light pink */
+  background-color: #f9d6d9; 
   
 }
 
 /* Darker pink background on hover */
 .nav-buttons ul li a:hover {
-  background-color: #f29ab2; /* Darker pink */
-  transform: translateY(-2px); /* Move the link up slightly */
+  background-color: #f29ab2; 
+  transform: translateY(-2px); 
 }
 
 /* To make the links appear slightly outlined */
 .nav-buttons ul li a {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); /* Add very light outline */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); 
 }
 
 
