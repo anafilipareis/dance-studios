@@ -10,6 +10,7 @@
   
   .carousel-container {
     width:100%;
+    height: 80vh; 
     overflow: hidden;   
   }
   
@@ -22,11 +23,11 @@
   .carousel-image {
     max-width:100%;
     width: 100%;
-    height: auto;
     opacity: 0; 
     position: absolute;
     transition: opacity 1s ease; 
-    object-fit: 100% 40%;
+    height: 80vh; /* Adjust to match the height of the carousel container */
+    object-fit: cover; /* Ensures the image covers the entire container */
   }
   
   .carousel-image.active {
