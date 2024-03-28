@@ -1,0 +1,65 @@
+.LoginPage {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+   
+  }
+  
+  .LoginPage h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .LoginPage form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .LoginPage label {
+    margin-bottom: 10px;
+  }
+  
+  .LoginPage input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .LoginPage button {
+    padding: 10px 30px; 
+    margin: 0 auto; 
+    border: none;
+    border-radius: 5px;
+
+
+    background-color: black; 
+    color: #b8860b;
+   
+    transition: background-color 0.3s, color 0.3s; 
+    cursor: pointer;
+  }
+  
+  .LoginPage button:hover {
+    background-color: gold; 
+    color: darkgoldenrod; 
+  }
+  
+  .error-message {
+    color: #ff0000;
+    margin-top: 10px;
+  }
+
+  
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/slideshowmale.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+ 

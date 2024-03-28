@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { register } from "../services/auth.service";
 const API_URL = import.meta.env.VITE_DEPLOYMENT_URL;
+import "../styles/signupStyles.css"
 
 function SignUpPage() {
   const [userData, setUserData] = useState({

@@ -3,6 +3,8 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth.context";
 import { login } from "../services/auth.service";
+import "../styles/loginStyles.css";
+
 
 const API_URL=import.meta.env.VITE_DEPLOYMENT_URL;
  
