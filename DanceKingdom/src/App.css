@@ -18,12 +18,13 @@
 }
 
 .carousel-image {
-
+  max-width:100%;
   width: 100%;
-  height: 100%;
+  height: auto;
   opacity: 0; 
   position: absolute;
   transition: opacity 1s ease; 
+  object-fit: 100% 40%;
 }
 
 .carousel-image.active {
