@@ -148,9 +148,7 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
         <p>
           Teacher:{danceClass.teacher.firstName}
         </p>
-        <p>
-          Spots Left: {danceClass.spotsLeft}
-        </p>
+        
       </div>
       <div>
         <p>

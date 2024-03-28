@@ -34,7 +34,7 @@ function DanceClassesList() {
     <div style={{ padding: '50px' }}>
     
       <h1>Dance Classes</h1>
-      <Container>
+      <Container fluid style={{ height: '80vh' }}>
       <Row xs={1} md={2} lg={2}>
         {danceClasses.map((danceClass) => (
           <Col key={danceClass._id} className="mb-4">
