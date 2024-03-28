@@ -10,7 +10,7 @@
   
   .carousel-container {
     width:100%;
-    height: 80vh; 
+    height: 80vh; /* it has to be the same height as the carousel-image */
     overflow: hidden;   
   }
   
@@ -46,14 +46,24 @@
     margin: 96px auto;
   }
 
-  .about-us {
-    margin-top: 200px;
-    width: 1000px;
+  .about-us-section {
+    display: flex;
+    align-items: center; /* Align items vertically */
   }
 
-  .watch-our-classes{
-    width: 1000px;
-    margin-top: 50px;
+  .about-us {
+    flex: 1; /* Allow flexibility for dynamic sizing */
+    margin-right: 20px; /* Add space between items */
+  }
+
+  .about-us-image {
+    flex-shrink: 0; /* Prevent shrinking */
+    margin-right: 20px; /* Add space between items */
+  }
+
+  .watch-our-classes {
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 560px; /* Adjust width if necessary */
   }
 
 
