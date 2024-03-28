@@ -108,7 +108,7 @@ function ProfileInfo() {
           </button>
           <h2 className="welcome-text"> Good to see you {user.username}</h2>
           <h4 className="status">{user.status}</h4>
-          {/* Display fetched dance classes */}
+          
           <div>
             <h3>My Classes:</h3>
             <ul>
