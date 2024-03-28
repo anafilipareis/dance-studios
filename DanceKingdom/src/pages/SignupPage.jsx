@@ -32,6 +32,7 @@ function SignUpPage() {
   };
 
   return (
+    <div className="background-color">
    <div className="subackground">
     <div className="SignupPage">
       <h1>Signup Page</h1>
@@ -99,6 +100,7 @@ function SignUpPage() {
         Already have an account? <Link to="/login">Login</Link>
       </p>
     </div>
+   </div>
    </div>
   );
 }

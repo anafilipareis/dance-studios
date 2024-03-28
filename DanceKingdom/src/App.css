@@ -1,2 +1,6 @@
 
+/* background color for all the pages except home page */
+.background-color {
+  background: linear-gradient(to bottom right, #f2f2f2, #989393f0);
+}
 
