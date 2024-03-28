@@ -2,8 +2,9 @@ import React, { useContext } from 'react';
 import AddDanceClass from '../components/AddDanceClass';
 import ProfileInfo from '../components/ProfileInfo';
 import { AuthContext } from '../context/auth.context';
-import Footer from '../components/footer'; // Import the Footer component
+import Footer from '../components/footer'; 
 import '../index.css';
+import '../styles/profileStyles.css'
 
 function ProfilePage() {
   const { user } = useContext(AuthContext);

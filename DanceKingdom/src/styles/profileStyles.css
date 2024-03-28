@@ -1,0 +1,80 @@
+
+
+.baseProfInfo {
+    text-align: center;
+  }
+  
+  .profilePicture {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+  }
+  
+  .profPicEdit {
+    display: block;
+    margin: 0 auto; 
+  }
+  
+  .EditProfilePicture {
+    margin-bottom: 20px; 
+  }
+  
+  /* Style for file input */
+  .EditProfilePicture input[type="file"] {
+    display: none; 
+  }
+  
+  /* Style for upload button */
+  .EditProfilePicture button {
+    margin-top: 10px; 
+    cursor: pointer;
+  }
+
+  .myClasses {
+    max-width: 400px;
+    margin: 20px auto; /* Adjust margin as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .myClasses h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .myClasses ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+  }
+  
+  .myClasseslist {
+    margin-bottom: 20px;
+  }
+  
+  .myClasseslist h2 {
+    margin-bottom: 5px;
+  }
+  
+  .myClasseslist p {
+    margin: 5px 0;
+  }
+  
+  .myClasseslist button {
+    padding: 10px 30px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #b8860b;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .myClasseslist button:hover {
+    background-color: gold;
+    color: darkgoldenrod;
+  }
