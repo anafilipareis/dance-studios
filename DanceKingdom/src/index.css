@@ -2,6 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -38,20 +39,20 @@ h1 {
   width: 100%; 
   max-width: 100vw; 
   z-index: 1000;
-  /*adding a background image to the navbar */
+ 
   background-image: url('./assets/navbarback.jpg'); 
   background-size: cover; 
  
 }
 
 .logo {
-  height: 90px; /* Adjust the height as needed */ 
+  height: 90px; 
 }
 
 
 .nav-buttons {
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center; 
 }
 
 .nav-buttons ul {
@@ -63,35 +64,35 @@ h1 {
 }
 
 .nav-buttons ul li {
-  margin-right: 20px; /* Add some gap between the links */
+  margin-right: 20px; 
 }
 
 .nav-buttons ul li:last-child {
-  margin-right: 0; /* Remove margin for the last item */
+  margin-right: 0; 
 }
 
 .nav-buttons ul li a {
   text-decoration: none;
   color: black;
-  padding: 8px 12px; /* padding for spacing */
+  padding: 8px 12px; 
   border: 1px solid transparent;
   border-radius: 4px;
   transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Light pink background */
+
 .nav-buttons ul li a {
   background-color: #f9d6d9; 
   
 }
 
-/* Darker pink background on hover */
+
 .nav-buttons ul li a:hover {
   background-color: #f29ab2; 
   transform: translateY(-2px); 
 }
 
-/* To make the links appear slightly outlined */
+
 .nav-buttons ul li a {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); 
 }
@@ -116,9 +117,9 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+/* 
 @media (prefers-color-scheme: light) {
-  /* Define variables for light mode */
+  
   :root {
     --bg-color: #ffffff;
     --text-color: #213547;
@@ -129,7 +130,6 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
 
 
 
