@@ -6,9 +6,11 @@ import contactUs from '../assets/contactus.png';
 import danceGuy from '../assets/danceguy.png';
 import '../styles/homePageStyles.css';
 
+
 const HomePage = () => {
   return (
     <div className="container">
+
       <MainCarousel />
 
       <div className="content">
@@ -63,6 +65,5 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
 
 
