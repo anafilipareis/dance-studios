@@ -11,6 +11,7 @@ function ProfilePage() {
   const isTeacher = user && user.status === 'teacher';
 
   return (
+    <div className='background-color'>
     <>
     <div className="profile-page-container">
       <div className="profile-info-box">
@@ -24,6 +25,7 @@ function ProfilePage() {
       
     </div> 
     <Footer /> </>
+    </div>
   );
 }
 

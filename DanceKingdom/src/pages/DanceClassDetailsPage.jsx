@@ -43,6 +43,7 @@ console.log(params)
   }, [params.id]);
 
   return (
+    <div className='background-color'> 
     <>
     <Container className="d-flex flex-column min-vh-100">
       <Row>
@@ -68,6 +69,7 @@ console.log(params)
     </Container>
      <Footer /> {/* Render the Footer component */}
      </>
+     </div>
   );
 }
 

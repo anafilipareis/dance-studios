@@ -48,6 +48,7 @@ function LoginPage(props) {
 
   
   return (
+    <div className="background-color">
    <div className="LPbackground">
     <div className="LoginPage">
       <h1>Login</h1>
@@ -76,6 +77,7 @@ function LoginPage(props) {
       <p>Don't have an account yet?</p>
       <Link to={"/signup"}> Sign Up</Link>
     </div>
+   </div>
    </div>
   )
 }
