@@ -3,7 +3,6 @@
 
 ## [See the App!](https://dancekingdom.netlify.app/)
 
-![App Logo](/assets/dancerlogo.png)
 
 ## Description
 
