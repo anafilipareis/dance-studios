@@ -6,7 +6,7 @@
   margin: 0 auto; 
   padding: 20px; 
   background-color: #f0f0f0;  */
-}
+
 
 /*  smartphones */
 @media screen and (max-width: 480px) {
@@ -22,7 +22,7 @@
   }
 }
 
-
+}
 
 
 
