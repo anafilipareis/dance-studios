@@ -67,7 +67,7 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
 
   return (
     <div>
-      <h2>Edit Class</h2>
+      <h2>Class Details:</h2>
       <p>
         Title:
         {user && user.status === 'teacher' ? (
