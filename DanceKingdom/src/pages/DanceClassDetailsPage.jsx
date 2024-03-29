@@ -42,36 +42,36 @@ console.log(params)
     fetchDanceClassDetails();
   }, [params.id]);
 
-  return (
-    <div className='background-color'> 
-    <>
-    <Container className="d-flex flex-column min-vh-100">
-      <Row>
-        <Col md={12}>
-          <div className="title-wrapper">
-            {/* <h2 className="pt-3">Dance Class Details</h2> */}
-          </div>
-          
-        </Col>
-      </Row>
-      <Row>
-        <Col md={6} className="pt-3">
-          <div className="details-box">
-            <DanceClassDetails isTeacher={isTeacher} danceClass={danceClass} loading={loading} user={user} setDanceClass={setDanceClass}/>
-          </div>
-        </Col>
-        <Col md={6} className="pt-3">
-          <div className="comments-box">
-            <CommentSection danceClass={danceClass} setDanceClass={setDanceClass}/> 
-          </div>
-        </Col>
-      </Row>
-    </Container>
-     <Footer /> 
-     </>
-     </div>
-  );
-}
+  
+    return (
+      <div className='background-color'>
+        <>
+          <Container className="d-flex flex-column min-vh-100">
+            <Row>
+              <Col md={6} className="pt-3">
+                <div className="details-box">
+                  <DanceClassDetails isTeacher={isTeacher} danceClass={danceClass} loading={loading} user={user} setDanceClass={setDanceClass} />
+                </div>
+              </Col>
+              <Col md={6} className="pt-3">
+                <div className="comments-box">
+                  <CommentSection danceClass={danceClass} setDanceClass={setDanceClass} />
+                  {/* Render comments here */}
+                  {danceClass?.comments?.map((comment) => (
+                    <div key={comment._id}>
+                      <h5>{comment.user.username} says:</h5>
+                      <p>{comment.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </Col>
+            </Row>
+          </Container>
+          <Footer />
+        </>
+      </div>
+    );
+  }
 
 export default DanceClassDetailsPage;
 
