@@ -10,23 +10,35 @@
     border-radius: 50%; 
     object-fit: cover; 
     margin-bottom: 10px; 
+    margin-top: 20%;
   }
   
   .profPicEdit {
     display: block;
     margin: 0 auto; 
+    padding: 10px 30px; 
+    margin: 0 auto; 
+    border: none;
+    border-radius: 5px;
+
+
+    background-color: black; 
+    color: #b8860b;
+   
+    transition: background-color 0.3s, color 0.3s; 
+    cursor: pointer;
   }
   
   .EditProfilePicture {
     margin-bottom: 20px; 
   }
   
-  /* Style for file input */
+  
   .EditProfilePicture input[type="file"] {
     display: none; 
   }
   
-  /* Style for upload button */
+ 
   .EditProfilePicture button {
     margin-top: 10px; 
     cursor: pointer;
@@ -34,7 +46,7 @@
 
   .myClasses {
     max-width: 400px;
-    margin: 20px auto; /* Adjust margin as needed */
+    margin: 20px auto; 
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -47,7 +59,7 @@
   }
   
   .myClasses ul {
-    list-style-type: none; /* Remove default list styles */
+    list-style-type: none; 
     padding: 0;
   }
   
@@ -86,9 +98,13 @@
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.624);
 }
 
 .profile-info-box {
+  margin-top: 10%;
   flex: 1;
 }
 
@@ -202,8 +218,8 @@
   margin: 0 auto;
   border: none;
   border-radius: 5px;
-  background-color: rgb(134, 44, 44);
-  color: #b8860b;
+  background-color: rgb(134, 129, 44);
+  color: #1a1302;
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(231, 204, 204, 0.382); /* Add a 3D effect */
@@ -216,3 +232,17 @@
 }
 
 
+ .fullbackground {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}

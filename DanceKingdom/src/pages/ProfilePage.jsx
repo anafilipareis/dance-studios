@@ -12,7 +12,6 @@ function ProfilePage() {
   const isTeacher = user && user.status === 'teacher';
 
   return (
-    <div className='fullbackgroung'>
     <div className='background-color'>
     <>
     <div className="profile-page-container">
@@ -27,7 +26,6 @@ function ProfilePage() {
       
     </div> 
     <Footer /> </>
-    </div>
     </div>
   );
 }
