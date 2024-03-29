@@ -6,9 +6,11 @@ import contactUs from '../assets/contactus.png';
 import danceGuy from '../assets/danceguy.png';
 import danceGuy2 from '../assets/danceguy2.png'; // Import the new image
 import '../styles/homePageStyles.css';
+import '../App.css';
 
 const HomePage = () => {
   return (
+    <div className='uniContainer'>
     <div className="container">
 
       <MainCarousel />
@@ -24,7 +26,9 @@ const HomePage = () => {
 
           <div className="about-us">
             <h2>About Us</h2>
-            <p>Dance Kingdom has been a beacon of dance excellence in Amsterdam. Over the years, our studio has been graced by extraordinary dancers who have left an indelible mark on the dance world. Our vibrant community celebrates the joy of movement and self-expression. Join us at Dance Kingdom where passion meets dance, and every step tells a story.</p>
+            <p>Dance Kingdom has been a beacon of dance excellence in Amsterdam. 
+              Over the years, our studio has been graced by extraordinary dancers who have left an indelible mark on the dance world. 
+              Our vibrant community celebrates the joy of movement and self-expression. Join us at Dance Kingdom where passion meets dance, and every step tells a story.</p>
           </div>
 
           
@@ -65,7 +69,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
+      </div>
       <Footer />
     </div>
   );

@@ -1,10 +1,49 @@
 
-/* background color for all the pages except home page */
+/* Iam tryin to fit the app for all devices */
+
+.uniContainer {
+  /* max-width: 960px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #f0f0f0;  */
+}
+
+/*  smartphones */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/*  tablets */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    max-width: 720px; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .background-color {
   background: linear-gradient(to bottom right, #f2f2f2d4, #989393f0);
   background-image: url('../src/assets/slideshowballet.jpg');
-  
-    
   
   top: 0;
   left: 0;

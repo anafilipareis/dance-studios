@@ -4,6 +4,7 @@ import { Card, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 function DanceClassesList() {
   const [danceClasses, setDanceClasses] = useState([]);
 
