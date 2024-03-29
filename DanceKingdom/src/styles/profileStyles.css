@@ -10,23 +10,35 @@
     border-radius: 50%; 
     object-fit: cover; 
     margin-bottom: 10px; 
+    margin-top: 20%;
   }
   
   .profPicEdit {
     display: block;
     margin: 0 auto; 
+    padding: 10px 30px; 
+    margin: 0 auto; 
+    border: none;
+    border-radius: 5px;
+
+
+    background-color: black; 
+    color: #b8860b;
+   
+    transition: background-color 0.3s, color 0.3s; 
+    cursor: pointer;
   }
   
   .EditProfilePicture {
     margin-bottom: 20px; 
   }
   
-  /* Style for file input */
+  
   .EditProfilePicture input[type="file"] {
     display: none; 
   }
   
-  /* Style for upload button */
+ 
   .EditProfilePicture button {
     margin-top: 10px; 
     cursor: pointer;
@@ -34,7 +46,7 @@
 
   .myClasses {
     max-width: 400px;
-    margin: 20px auto; /* Adjust margin as needed */
+    margin: 20px auto; 
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -47,7 +59,7 @@
   }
   
   .myClasses ul {
-    list-style-type: none; /* Remove default list styles */
+    list-style-type: none; 
     padding: 0;
   }
   
@@ -78,3 +90,159 @@
     background-color: gold;
     color: darkgoldenrod;
   }
+
+  /* ProfilePage from index css */
+.profile-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.624);
+}
+
+.profile-info-box {
+  margin-top: 10%;
+  flex: 1;
+}
+
+.add-dance-class-box {
+  flex: 1;
+  max-width: 400px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-dance-class-box h2 {
+  margin-bottom: 20px;
+}
+
+
+.add-dance-class-box {
+  max-width: 400px; 
+  margin: 130px auto; /* Adjust margin as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: url('../assets/deepblack.jpg');
+  font-style: oblique;
+  color: goldenrod;
+}
+
+
+
+.add-dance-class-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-dance-class-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-dance-class-box label {
+  width: 100%; /* Ensure labels take up full width */
+  margin-bottom: 10px;
+}
+
+.add-dance-class-box input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-dance-class-box button {
+  padding: 10px 30px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: #b8860b;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  
+}
+
+.add-dance-class-box button:hover {
+  background-color: gold;
+  color: darkgoldenrod;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.myClasseslist {
+  margin-bottom: 20px;
+  
+  justify-content: space-between;
+  background-image: url('../assets/deepblack.jpg');
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.myClasseslist:nth-child(3n) {
+  margin-right: 0; /* Remove margin for every third item */
+  width: calc(33.33% - 10px); /* Calculate width for each item */
+}
+
+.myClasseslist h2 {
+  margin-bottom: 5px;
+  color: gold; /* Set font color to golden */
+}
+
+.myClasseslist p {
+  margin: 5px 0;
+  color: rgb(205, 182, 49); /* Set font color to golden */
+}
+
+.myClasseslist button {
+  padding: 10px 30px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(134, 129, 44);
+  color: #1a1302;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(231, 204, 204, 0.382); /* Add a 3D effect */
+}
+
+.myClasseslist button:hover {
+  background-color: gold;
+  color: darkgoldenrod;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+
+ .fullbackground {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
