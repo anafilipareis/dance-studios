@@ -2,10 +2,10 @@
 /* Iam tryin to fit the app for all devices */
 
 .uniContainer {
-  /* max-width: 960px; 
+  max-width: auto; 
   margin: 0 auto; 
-  padding: 20px; 
-  background-color: #f0f0f0;  */
+  padding: auto; 
+  background-color: #f0f0f0; 
 
 
 /*  smartphones */

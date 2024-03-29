@@ -18,6 +18,7 @@ import DanceClassDetailsPage from "./pages/DanceClassDetailsPage";
 function App() {
 
   return (
+    <div className='uniContainer'>
     <div className="App">
       <NavBar />
       
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/signup" element={<IsAnon><SignupPage /></IsAnon>} /> 
         <Route exact path="/login" element={<IsAnon><LoginPage /></IsAnon>}/>       
       </Routes>
+    </div>
     </div>
   );
 }
