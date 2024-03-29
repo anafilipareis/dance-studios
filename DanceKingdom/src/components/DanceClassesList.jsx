@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getAllDanceClasses, subscribeToClass } from '../services/auth.service';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/danceClassesListStyle.css';
 
 
 
@@ -32,9 +33,9 @@ function DanceClassesList() {
 
   return (
     <div style={{ padding: '50px' }}>
-    
-      <h1>Dance Classes</h1>
+      <h1 className="title">Dance Classes</h1>
       <Container fluid style={{ height: '80vh' }}>
+
       <Row xs={1} md={2} lg={2}>
         {danceClasses.map((danceClass) => (
           <Col key={danceClass._id} className="mb-4">
@@ -55,6 +56,7 @@ function DanceClassesList() {
         ))}
       </Row>
     </Container>
+
     </div>
   );
 }

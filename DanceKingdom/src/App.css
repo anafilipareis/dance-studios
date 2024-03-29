@@ -45,6 +45,8 @@
   background: linear-gradient(to bottom right, #f2f2f2d4, #989393f0);
   background-image: url('../src/assets/slideshowballet.jpg');
   
+
+  
   top: 0;
   left: 0;
   width: 100%;
@@ -55,4 +57,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
 
