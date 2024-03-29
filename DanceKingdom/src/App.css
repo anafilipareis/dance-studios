@@ -1,8 +1,9 @@
 
 /* background color for all the pages except home page */
 .background-color {
-  background: linear-gradient(to bottom right, #f2f2f2, #989393f0);
+  background: linear-gradient(to bottom right, #f2f2f2d4, #989393f0);
   background-image: url('../src/assets/slideshowballet.jpg');
+  
     
   
   top: 0;

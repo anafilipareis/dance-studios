@@ -98,29 +98,25 @@ function AddDanceClass(props) {
           value={formData.time}
           onChange={handleChange}
         /></p>
-       <p>
-        <label>Video (YouTube Embed Link):</label>
-        <input
-          type="text"
-          name="video"
-          value={formData.video}
-          onChange={handleChange}
-          placeholder="Paste YouTube embed link..."
-        /></p>
-        {/* Display video preview */}
-        {formData.video && (
-          <div className="video-preview">
-            <iframe
-              width="560"
-              height="315"
-              src={formData.video}
-              title="YouTube video preview"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        )}
+     <p>
+  <label>Video :</label>
+  <input
+    type="text"
+    name="video"
+    value={formData.video}
+    onChange={handleChange}
+    placeholder="Paste YouTube embed link..."
+  />
+</p>
+
+{/* Display video link */}
+{formData.video && (
+  <div className="video-preview">
+    <a href={formData.video} target="_blank" rel="noopener noreferrer">
+      Watch Video
+    </a>
+  </div>
+)}
         <p>
         <label>Picture:</label>
         <input

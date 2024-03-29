@@ -4,9 +4,12 @@ import Footer from '../components/footer'; // Import your Footer component
 
 const DanceClassesPage = () => {
   return (
+    
     <div className='background-color'> 
+     <div className='danceClassPage-container'>
       <DanceClasses />
-      <Footer /> {/* Render the Footer component */}
+      </div>
+      <Footer /> 
     </div>
   );
 };

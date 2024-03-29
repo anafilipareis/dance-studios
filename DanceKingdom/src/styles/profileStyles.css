@@ -1,5 +1,24 @@
 
 
+  /* COntainer of the profile page */
+  .profile-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.624);
+  }
+  
+  .profile-info-box {
+    margin-top: 50%;
+    flex: 1;
+  }
+
+/* This section is covering the profile picture styles */
+
 .baseProfInfo {
     text-align: center;
   }
@@ -10,14 +29,14 @@
     border-radius: 50%; 
     object-fit: cover; 
     margin-bottom: 10px; 
-    margin-top: 20%;
+    /* margin-top: 20%; */
   }
   
   .profPicEdit {
     display: block;
     margin: 0 auto; 
     padding: 10px 30px; 
-    margin: 0 auto; 
+    
     border: none;
     border-radius: 5px;
 
@@ -30,19 +49,47 @@
   }
   
   .EditProfilePicture {
-    margin-bottom: 20px; 
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 10vh;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 20px auto; 
+    padding: 20px;
   }
   
   
+  
   .EditProfilePicture input[type="file"] {
-    display: none; 
+    display:flex;
+    
   }
   
  
   .EditProfilePicture button {
-    margin-top: 10px; 
+    display: block;
+    margin: 0 auto; 
+    padding: 10px 30px; 
+    gap: 5%;
+    border: none;
+    border-radius: 5px;
+
+
+    background-color: black; 
+    color: #b8860b;
+   
+    transition: background-color 0.3s, color 0.3s; 
     cursor: pointer;
   }
+
+
+  /* This is the section 
+  where we can add styles to the classes of the teacher displayed on the profile page*/
 
   .myClasses {
     max-width: 400px;
@@ -100,7 +147,7 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.624);
+  background-color: rgba(255, 255, 255, 0.601);
 }
 
 .profile-info-box {
@@ -148,7 +195,7 @@
 }
 
 .add-dance-class-box label {
-  width: 100%; /* Ensure labels take up full width */
+  width: 100%; 
   margin-bottom: 10px;
 }
 

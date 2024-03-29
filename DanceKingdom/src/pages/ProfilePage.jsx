@@ -3,7 +3,7 @@ import AddDanceClass from '../components/AddDanceClass';
 import ProfileInfo from '../components/ProfileInfo';
 import { AuthContext } from '../context/auth.context';
 import Footer from '../components/footer'; 
-import '../index.css';
+
 import '../styles/profileStyles.css'
 
 function ProfilePage() {

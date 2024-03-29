@@ -51,7 +51,7 @@ console.log(params)
           <div className="title-wrapper">
             <h2 className="pt-3">Dance Class Details</h2>
           </div>
-          {/* <img src={danceClass.picture} alt="Dance Class" className="dance-class-image" /> */}
+          
         </Col>
       </Row>
       <Row>
@@ -67,7 +67,7 @@ console.log(params)
         </Col>
       </Row>
     </Container>
-     <Footer /> {/* Render the Footer component */}
+     <Footer /> 
      </>
      </div>
   );

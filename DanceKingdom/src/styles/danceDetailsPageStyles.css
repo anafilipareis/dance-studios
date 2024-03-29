@@ -1,21 +1,71 @@
-/* Dance class details box */
+
 .details-box {
-    background-color: #f8f9fa; /* Light gray background */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Add padding */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
-    border: 1px solid #ced4da; /* Add border */
+  max-width: 500px; 
+  margin: 130px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.554);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: url('../assets/deepblack.jpg');
+  font-style: oblique;
+  color: goldenrod;
+  }
+
+  .details-box input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
   }
   
-  /* Comments box */
+ 
   .comments-box {
-    background-color: #f8f9fa; /* Light gray background */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Add padding */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
-    border: 1px solid #ced4da; /* Add border */
+    max-width: 900px; 
+    margin: 130px auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.607);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('../assets/deepblack.jpg');
+    font-style: oblique;
+    color: goldenrod;
+  }
+
+  .details-box button {
+    padding: 10px 30px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(50, 43, 21);
+    color: #b8860b;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    
+    
+  }
+
+  .comments-box textarea {
+    
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 20px);
   }
   
   .title-wrapper {
-    margin-right: 20px; /* Adjust margin-right as needed */
+    margin-right: 20px; 
+  }
+
+
+  .danceClassPage-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.661);
   }

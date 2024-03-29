@@ -22,8 +22,7 @@ function DanceClassesList() {
 
   const handleSubscribe = async (classId) => {
     try {
-      // Instead of subscribing directly here, let's navigate to the class details page
-      // You can use the classId to construct the URL
+     
       window.location.href = `/dance-classes/class/${classId}`;
     } catch (error) {
       console.error('Error navigating to class details:', error);
@@ -44,6 +43,9 @@ function DanceClassesList() {
                 <Card.Text>📅 Day: {danceClass.day}</Card.Text>
                 <Card.Text>⏰ Time: {danceClass.time}</Card.Text>
                 <Card.Text>👩‍🏫 Teacher: {danceClass.teacher.firstName}</Card.Text>
+                <Card.Text>
+                    📽️ Video Link: <a href={danceClass.video} target="_blank" rel="noopener noreferrer">{danceClass.video}</a>
+                  </Card.Text>
                 <button className="btn btn-primary mr-2" onClick={() => handleSubscribe(danceClass._id)}>More Information</button>
                 <button className="btn btn-success" onClick={() => alert('You successfully subscribed for the class')}> Subscribe </button>
               </Card.Body>

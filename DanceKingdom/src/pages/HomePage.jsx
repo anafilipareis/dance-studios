@@ -14,7 +14,7 @@ const HomePage = () => {
       <MainCarousel />
 
       <div className="content">
-        {/* About Us and Watch Out Our Classes Section */}
+        
 
         <div className="about-us-section">
 
@@ -27,9 +27,7 @@ const HomePage = () => {
             <p>Dance Kingdom has been a beacon of dance excellence in Amsterdam. Over the years, our studio has been graced by extraordinary dancers who have left an indelible mark on the dance world. Our vibrant community celebrates the joy of movement and self-expression. Join us at Dance Kingdom where passion meets dance, and every step tells a story.</p>
           </div>
 
-          {/* <div className="about-us-image">
-            <img src={danceGuy2} alt="Another Image" style={{ width: '250px', height: 'auto' }} />
-          </div> */}
+          
 
           <div className="watch-our-classes">
             <h2>Watch Out Our Classes</h2>
