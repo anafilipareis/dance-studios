@@ -43,19 +43,20 @@ function ProfileInfo() {
     if (!userInfo._id) return;
 
     const getUserData = () => {
+      // Fetch user profile data
       profileService.getProfile({ id: userInfo._id }).then((data) => {
         setUser(data.data.user);
       });
     };
 
     const getTeacherClasses = () => {
-      danceClassService.getAllDanceClasses()
+      // Fetch dance classes of the logged-in teacher
+      danceClassService.getTeacherDanceClasses()
         .then((response) => {
-          const userCreatedClasses = response.data.filter(danceClass => danceClass.teacher === userInfo._id);
-          setDanceClasses(userCreatedClasses);
+          setDanceClasses(response.data);
         })
         .catch((error) => {
-          console.error("Error fetching dance classes:", error);
+          console.error("Error fetching teacher's dance classes:", error);
         });
     };
 
@@ -66,7 +67,6 @@ function ProfileInfo() {
   if (!user) {
     return <p>Loading</p>;
   }
-
 
   const handleSubscribe = async (classId) => {
     try {
@@ -117,7 +117,6 @@ function ProfileInfo() {
                   <h2>{danceClass.title}</h2>
                   <p>Day: {danceClass.day}</p>
                   <p>Time: {danceClass.time}</p>
-                  <p>Teacher: {danceClass.teacher}</p>
                   <button onClick={() => handleSubscribe(danceClass._id)}>More Information</button>
                 </li>
               ))}

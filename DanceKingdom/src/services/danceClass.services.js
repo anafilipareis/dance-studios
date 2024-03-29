@@ -33,6 +33,12 @@ class DanceClassService {
   getSingleClass = id => {
     return this.api.get(`/dance-classes/class/${id}`);
   };
+
+  getTeacherDanceClasses = () => {
+    return this.api.get(`/dance-classes/teacher`);
+  };
+
+  
  
   // PUT /dance-classes/:id
   updateSingleClass = (id, requestBody) => {
