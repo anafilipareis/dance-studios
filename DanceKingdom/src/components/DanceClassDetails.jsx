@@ -149,16 +149,6 @@ function DanceClassDetails({ user, danceClass, loading, setDanceClass }) {
           <button onClick={handleDelete}>Delete</button>
         </>
       )}
-
-     
-      {danceClass?.comments?.map((comment) => {
-        return (
-          <div key={comment._id}>
-            <h5>{comment.user.username} says:</h5>
-            <h>{comment.text}</h>
-          </div>
-        )
-      })}
       
     </div>
   );
