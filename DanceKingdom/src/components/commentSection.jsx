@@ -36,7 +36,8 @@ function CommentSection({setDanceClass, danceClass}) {
         onChange={(e) => setNewCommentText(e.target.value)}
         placeholder="Write a comment..."
       ></textarea>
-      <button onClick={handleCommentSubmit}>Submit</button>
+      <p>
+      <button onClick={handleCommentSubmit}>Submit</button></p>
     </div>
   );
 }

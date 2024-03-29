@@ -1,21 +1,31 @@
-/* Dance class details box */
-.details-box {
-    background-color: #f8f9fa; /* Light gray background */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Add padding */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
-    border: 1px solid #ced4da; /* Add border */
-  }
-  
-  /* Comments box */
-  .comments-box {
-    background-color: #f8f9fa; /* Light gray background */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Add padding */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
-    border: 1px solid #ced4da; /* Add border */
-  }
-  
-  .title-wrapper {
-    margin-right: 20px; /* Adjust margin-right as needed */
-  }
+/* Dance Class Details Page */
+
+
+/* Adjust container layout to match Profile Page */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+/* Match the styling of details box and comments box */
+.details-box,
+.comments-box {
+  background-color: rgba(255, 255, 255, 0.85); /* Set the background color with transparency */
+  color: black; /* Set the text color to white */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Add padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  border: 1px solid #ced4da; /* Add border */
+}
+
+/* Adjust margin of title wrapper */
+.title-wrapper {
+  margin-right: 20px; /* Adjust margin-right as needed to match profile page */
+}
