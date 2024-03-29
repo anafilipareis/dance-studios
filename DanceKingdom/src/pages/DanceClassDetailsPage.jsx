@@ -49,7 +49,7 @@ console.log(params)
       <Row>
         <Col md={12}>
           <div className="title-wrapper">
-            <h2 className="pt-3">Dance Class Details</h2>
+            {/* <h2 className="pt-3">Dance Class Details</h2> */}
           </div>
           
         </Col>

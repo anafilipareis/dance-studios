@@ -3,6 +3,12 @@
     color: black; /* Set the text color to white */
   }
   
-  .title {
-    color: white; /* Set the title color to white */
+  .btn-more-info {
+    background-color: black;
+    color: orange;
+  }
+  
+  .btn-subscribe {
+    background-color: black;
+    color: orange;
   }
