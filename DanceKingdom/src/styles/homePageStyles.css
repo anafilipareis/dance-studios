@@ -48,22 +48,22 @@
 
   .about-us-section {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center; 
   }
 
   .about-us {
-    flex: 1; /* Allow flexibility for dynamic sizing */
-    margin-right: 20px; /* Add space between items */
+    flex: 1; 
+    margin-right: 20px;
   }
 
   .about-us-image {
-    flex-shrink: 0; /* Prevent shrinking */
-    margin-right: 20px; /* Add space between items */
+    flex-shrink: 0; 
+    margin-right: 20px; 
   }
 
   .watch-our-classes {
-    flex-shrink: 0; /* Prevent shrinking */
-    width: 560px; /* Adjust width if necessary */
+    flex-shrink: 0; 
+    width: 560px; 
   }
 
 
@@ -77,12 +77,12 @@
   
   .prices,
 .contact-us {
-  flex: 1; /* Make both elements flexible */
+  flex: 1; 
 }
 
 
 
-  /* footer */
+
   .footer {
     background-color: #000;
     color: #fff;

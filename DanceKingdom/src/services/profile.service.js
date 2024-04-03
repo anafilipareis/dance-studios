@@ -6,9 +6,9 @@ class ProfileService {
       baseURL: import.meta.env.VITE_DEPLOYMENT_URL
     });
 
-    // Automatically set JWT token in the headers for every request
+   
     this.api.interceptors.request.use(config => {
-      // Retrieve the JWT token from the local storage
+  
       const storedToken = localStorage.getItem('authToken');
 
       if (storedToken) {
@@ -28,13 +28,13 @@ class ProfileService {
   updateProfile = (formData) => {
     return this.api.put('/profile', formData, {
       headers: {
-        'Content-Type': 'multipart/form-data' // Set content type for FormData
+        'Content-Type': 'multipart/form-data' 
       }
     });
   };
 }
 
-// Create one instance object
+
 const profileService = new ProfileService();
 
 export default profileService;

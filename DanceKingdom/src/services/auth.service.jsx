@@ -60,7 +60,7 @@ export const subscribeToClass = async (classId) => {
 };
 
 
-// Add other authentication-related functions as needed
+
 
 export default {
   login,
@@ -69,5 +69,5 @@ export default {
   getUserProfile,
   getAllDanceClasses,
   subscribeToClass,
-  // Add other functions here
+  
 };

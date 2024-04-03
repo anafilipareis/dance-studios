@@ -6,9 +6,8 @@ class DanceClassService {
       baseURL: import.meta.env.VITE_DEPLOYMENT_URL
     });
  
-    // Automatically set JWT token in the headers for every request
     this.api.interceptors.request.use(config => {
-      // Retrieve the JWT token from the local storage
+    
       const storedToken = localStorage.getItem('authToken');
  
       if (storedToken) {
@@ -52,7 +51,7 @@ class DanceClassService {
   
 }
  
-// Create one instance object
+
 const danceClassService = new DanceClassService();
  
 export default danceClassService;
